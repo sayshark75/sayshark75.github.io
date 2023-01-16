@@ -1,1 +1,1 @@
-{"version":3,"file":"static/css/main.bc6d5f5f.css","mappings":"AAAA,KACE,kBAAmB,CAEnB,QAAW,CADX,SAEF","sources":["App.css"],"sourcesContent":["body{\n  font-family: ubuntu;\n  padding: 0px;\n  margin: 0px;\n}\n\n\n\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"static/css/main.bc6d5f5f.css","mappings":"AAAA,KACE,kBAAmB,CAEnB,QAAW,CADX,SAEF","sources":["App.css"],"sourcesContent":["body {\n  font-family: ubuntu;\n  padding: 0px;\n  margin: 0px;\n}\n"],"names":[],"sourceRoot":""}
