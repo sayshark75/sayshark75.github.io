@@ -15,3 +15,23 @@ export const locationLink = "https://goo.gl/maps/wN3Ftd6UqrDHqG4G6";
 export const instagramLink = "https://www.instagram.com/say_shark/";
 
 export const facebookLink = "https://www.facebook.com/sayshark55/";
+
+export const glamazonLive = "https://glamazon.netlify.app/";
+
+export const glamazonGithub = "https://github.com/sayshark75/hesitant-reason-4638";
+
+export const indianExpressGithub = "https://github.com/sayshark75/bewildered-moon-2417";
+
+export const indianExpressLive = "https://sayshark75.github.io/bewildered-moon-2417/";
+
+export const myTheresaGithub = "https://github.com/sayshark75/teeny-wool-9254";
+
+export const myTheresaLive = "https://incredible-begonia-aec486.netlify.app/";
+
+export const APrimeLive = "https://a-prime.vercel.app/";
+
+export const APrimeGithub = "https://github.com/sayshark75/A-Prime";
+
+export const GadgetRamboGithub = "https://github.com/Atanu8250/GadgetRambo";
+
+export const GadgetRamboLive = "https://gadget-rambo.netlify.app/";

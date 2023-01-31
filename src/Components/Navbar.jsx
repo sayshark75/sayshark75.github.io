@@ -1,11 +1,10 @@
-import { Button, Text, Flex, Show, Tooltip } from "@chakra-ui/react";
-import React from "react";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
-import DevicesIcon from "@mui/icons-material/Devices";
-import ContactsIcon from "@mui/icons-material/Contacts";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
+import { Button, Text, Flex, Show, IconButton } from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { BsStars } from "react-icons/bs";
+import { FaHome } from "react-icons/fa";
+import { MdInfo, MdDevices, MdContactPage, MdContacts, MdDarkMode, MdWbSunny } from "react-icons/md";
+import { MyThemeContext } from "../Contexts/themeContext";
+
 import {
   NavabrButtonStyleLaptop,
   NavbarLaptopBar,
@@ -13,93 +12,114 @@ import {
   NavbarButtonInsideBoxMobile,
   NavbarButtonStyleMobile,
   NavbarLaptopLogoStyle,
+  NavbarThemeButtonConfig,
+  NavbarThemeMainFlex,
 } from "../Themes/Dark/NavbarStyles";
+import {
+  LNavabrButtonStyleLaptop,
+  LNavbarLaptopBar,
+  LNavbarMobileBar,
+  LNavbarButtonInsideBoxMobile,
+  LNavbarButtonStyleMobile,
+  LNavbarLaptopLogoStyle,
+  LNavbarThemeButtonConfig,
+} from "../Themes/Light/NavbarStyles";
 import { resumelink } from "../Sources/Links.js";
-import { toolTipStyle } from "../Themes/Dark/Miscellaneous";
+import { ScrollContext } from "../Contexts/ScrollContext";
 
 const Navbar = () => {
+  const { theme, setTheme } = useContext(MyThemeContext);
+  const { handleHomeRef, handleAboutRef, handleSkillsRef, handleProjectsRef, handleContactRef } = useContext(ScrollContext);
+
+  const handleClick = () => {
+    window.open(resumelink, "_blank");
+  };
+
   return (
     <>
       <Show above="md">
-        <Flex {...NavbarLaptopBar}>
+        <Flex {...(theme ? NavbarLaptopBar : LNavbarLaptopBar)}>
           <Show above="lg">
             <Flex alignItems={"center"} flex={1}>
-              <Text {...NavbarLaptopLogoStyle}>Sayyed Sharuk</Text>
+              <Text {...(theme ? NavbarLaptopLogoStyle : LNavbarLaptopLogoStyle)}>Sayyed Sharuk</Text>
             </Flex>
           </Show>
           <Flex justifyContent={"flex-end"} flex={1}>
-            <Tooltip {...toolTipStyle} label="Home">
-              <Button {...NavabrButtonStyleLaptop}>
-                <HomeIcon />
+            <Button onClick={handleHomeRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+              <FaHome /> Home
+            </Button>
+
+            <Button onClick={handleAboutRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+              <MdInfo /> About
+            </Button>
+
+            <Button onClick={handleProjectsRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+              <MdDevices /> Projects
+            </Button>
+
+            <Button onClick={handleSkillsRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+              <BsStars /> Skills
+            </Button>
+
+            <Button onClick={handleContactRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+              <MdContacts /> Contact
+            </Button>
+
+            <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
+              <Button {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+                <MdContactPage /> Resume
               </Button>
-            </Tooltip>
-            <Tooltip {...toolTipStyle} label="About">
-              <Button {...NavabrButtonStyleLaptop}>
-                <InfoIcon />
-              </Button>
-            </Tooltip>
-            <Tooltip {...toolTipStyle} label="Skills">
-              <Button {...NavabrButtonStyleLaptop}>
-                <AutoAwesomeIcon />
-              </Button>
-            </Tooltip>
-            <Tooltip {...toolTipStyle} label="Projects">
-              <Button {...NavabrButtonStyleLaptop}>
-                <DevicesIcon />
-              </Button>
-            </Tooltip>
-            <Tooltip {...toolTipStyle} label="Contact">
-              <Button {...NavabrButtonStyleLaptop}>
-                <ContactsIcon />
-              </Button>
-            </Tooltip>
-            <Tooltip {...toolTipStyle} label="Resume">
-              <a href={resumelink} target={"_blank"} rel="noreferrer">
-                <Button {...NavabrButtonStyleLaptop}>
-                  <ContactPageIcon />
-                </Button>
-              </a>
-            </Tooltip>
+            </a>
           </Flex>
         </Flex>
       </Show>
+      {/* Theme Preferences */}
+      <Flex {...NavbarThemeMainFlex}>
+        {theme ? (
+          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} icon={<MdDarkMode />} />
+        ) : (
+          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} icon={<MdWbSunny />} />
+        )}
+      </Flex>
 
       {/* Mobile Navbar */}
       <Show below="md">
-        <Flex {...NavbarMobileBar}>
-          <Button {...NavbarButtonStyleMobile}>
-            <Flex {...NavbarButtonInsideBoxMobile}>
-              <HomeIcon /> Home
+        <Flex {...(theme ? NavbarMobileBar : LNavbarMobileBar)}>
+          <Button onClick={handleHomeRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
+            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
+              <FaHome style={{ fontSize: "22px" }} /> Home
             </Flex>
           </Button>
-          <Button {...NavbarButtonStyleMobile}>
-            <Flex {...NavbarButtonInsideBoxMobile}>
-              <InfoIcon />
+          <Button onClick={handleAboutRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
+            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
+              <MdInfo style={{ fontSize: "22px" }} />
               About Me
             </Flex>
           </Button>
-          <Button {...NavbarButtonStyleMobile}>
-            <Flex {...NavbarButtonInsideBoxMobile}>
-              <AutoAwesomeIcon />
-              Skills
-            </Flex>
-          </Button>
-          <Button {...NavbarButtonStyleMobile}>
-            <Flex {...NavbarButtonInsideBoxMobile}>
-              <DevicesIcon />
+          <Button onClick={handleProjectsRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
+            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
+              <MdDevices style={{ fontSize: "22px" }} />
               Projects
             </Flex>
           </Button>
-          <Button {...NavbarButtonStyleMobile}>
-            <Flex {...NavbarButtonInsideBoxMobile}>
-              <ContactsIcon /> Contact
+          <Button onClick={handleSkillsRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
+            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
+              <BsStars style={{ fontSize: "22px" }} />
+              Skills
             </Flex>
           </Button>
-          <Button {...NavbarButtonStyleMobile}>
-            <Flex {...NavbarButtonInsideBoxMobile}>
-              <ContactPageIcon />
-              Resume
+          <Button onClick={handleContactRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
+            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
+              <MdContacts style={{ fontSize: "22px" }} /> Contact
             </Flex>
+          </Button>
+          <Button {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
+            <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
+              <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
+                <MdContactPage style={{ fontSize: "22px" }} />
+                Resume
+              </Flex>
+            </a>
           </Button>
         </Flex>
       </Show>

@@ -1,16 +1,16 @@
-export const typeImageBase =
-    "https://readme-typing-svg.demolab.com?font=Ubuntu&weight=500&size=26&duration=2000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=435&lines=A+Full+Stack+Developer;A+MERN+Stack+Developer;A+eSports+Enthusiast;An+Adapting+Personality;Follows+Work+Ethics";
+
 
   export const homeParentFlex = {
-    mt: { base: "30px", md: "100px" },
-    transition: "1000ms",
+    mt: { base: "30px", md: "80px" },
+    transition: "500ms",
     direction: "column",
     alignItems: "center",
     w: "100%",
+    pt:"50px",
     justifyContent: "center",
   };
   export const homeButtonsTop = {
-    borderRadius: "50%",
+    borderRadius: "3",
     size: "sm",
     m:{base:"1px",sm:"2",md:"3",lg:"5",xl:"6"},
     color: "black",
@@ -18,24 +18,32 @@ export const typeImageBase =
     transition: "700ms",
     _hover: { bgColor: "black", color: "white" },
     _active: { backgroundColor: "white", color: "black" },
+    fontSize:"20px",
   };
   
 
   export const heading1 = {
-    size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
+    // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
+    transition: "500ms",
+    fontSize:{ base: "34px", sm: "40px", md: "64px", lg: "86",xl:"108px" },
     color: "whiteAlpha.700",
   };
   export const heading2 = {
-    size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
+    // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
+    transition: "500ms",
+    fontSize:{ base: "34px", sm: "40px", md: "64px", lg: "86",xl:"108px" },
     color: "white",
   };
   export const aboutFlex = {
     m: "auto",
+    my:"8",
     transition: "1000",
     w: { base: "90%", sm: "70%", md: "60%" },
   };
   export const aboutText = {
     as: "b",
     p: "8",
+    transition: "500ms",
     color: "whiteAlpha.700",
+    textAlign:"justify",
   };

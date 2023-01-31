@@ -1,4 +1,5 @@
 export const NavabrButtonStyleLaptop = {
+  transition: "500ms",
   gap: 1,
   borderRadius: "0px",
   bgColor: "blackAlpha.600",
@@ -10,6 +11,7 @@ export const NavabrButtonStyleLaptop = {
 };
 
 export const NavbarLaptopBar = {
+  transition: "500ms",
   pos: "sticky",
   zIndex: "1",
   top: "0px",
@@ -18,10 +20,9 @@ export const NavbarLaptopBar = {
   color: "white",
   gap: "2",
   p: "1",
-  transition: "1000ms",
 };
 export const NavbarLaptopLogoStyle = {
-  transition: "1000ms",
+  transition: "500ms",
   color: "whiteAlpha.700",
   cursor: "pointer",
   _hover: { textShadow: "#CCC 1px 1px 2px" },
@@ -31,6 +32,7 @@ export const NavbarLaptopLogoStyle = {
 };
 
 export const NavbarMobileBar = {
+  transition: "500ms",
   pos: "fixed",
   bottom: "0",
   alignItems: "center",
@@ -42,6 +44,7 @@ export const NavbarMobileBar = {
   justifyContent: "center",
 };
 export const NavbarButtonStyleMobile = {
+  transition: "500ms",
   h: "100%",
   fontSize: "sm",
   borderRadius: "0px",
@@ -51,8 +54,28 @@ export const NavbarButtonStyleMobile = {
   _hover: { backgroundColor: "blackAlpha.800", color: "white" },
 };
 export const NavbarButtonInsideBoxMobile = {
+  transition: "500ms",
   m: 2,
   gap: 1,
   direction: "column",
   alignItems: "center",
+};
+export const NavbarThemeButtonConfig = {
+  transition: "500ms",
+  borderRadius: "50%",
+  size: "md",
+  mx: { base: "3", sm: "2", md: "3", lg: "5", xl: "10" },
+  color: "black",
+  bgColor: "white",
+  _hover: { bgColor: "black", color: "white" },
+  _active: { backgroundColor: "white", color: "black" },
+};
+
+export const NavbarThemeMainFlex = {
+  transition: "500ms",
+  w: "100%",
+  pos: "sticky",
+  top: "85%",
+  zIndex: "1",
+  justifyContent: "flex-end",
 };
