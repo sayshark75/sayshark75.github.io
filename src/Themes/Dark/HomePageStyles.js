@@ -38,7 +38,7 @@
     m: "auto",
     my:"8",
     transition: "1000",
-    w: { base: "90%", sm: "70%", md: "60%" },
+    w: { base: "95%", sm: "90%", md: "85%",lg:"70%" },
   };
   export const aboutText = {
     as: "b",

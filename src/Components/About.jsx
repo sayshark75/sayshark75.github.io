@@ -53,14 +53,14 @@ const About = () => {
               <Flex pt={2} justifyContent={"flex-start"}>
               <Button onClick={copyPhoneFun} {...(theme ? aboutButtonsTop : LaboutButtonsTop)} mr={1} ><MdOutlineContentCopy style={{ fontSize: "16px" }} />Copy</Button>
                 <Text {...(theme ? AboutContactCopy : LAboutContactCopy)} ml={1}>
-                  Phone : : +91 7588244148
+                  +91 7588244148
                 </Text>
               </Flex>
 
               <Flex pt={2} justifyContent={"flex-start"}>
                 <Button onClick={copyMailFun} {...(theme ? aboutButtonsTop : LaboutButtonsTop)} mr={1} ><MdOutlineContentCopy style={{ fontSize: "16px" }} />Copy</Button>
                 <Text fontSize={"sm"} {...(theme ? AboutContactCopy : LAboutContactCopy)} ml={1}>
-                  Gmail : : sayyedsharuk75@gmail.com
+                  sayyedsharuk75@gmail.com
                 </Text>
               </Flex>
 

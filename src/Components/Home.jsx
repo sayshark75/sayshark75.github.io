@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <Flex ref={HomeRef} {...homeParentFlex}>
-        <Flex>
+        <Flex direction={{base:"column",sm:"row"}}>
           <Heading {...(theme ? heading1 : Lheading1)}>Hi, I'm&nbsp;</Heading>
           <Heading {...(theme ? heading2 : Lheading2)}>Sayyed Sharuk</Heading>
         </Flex>

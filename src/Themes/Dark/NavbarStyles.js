@@ -75,7 +75,7 @@ export const NavbarThemeMainFlex = {
   transition: "500ms",
   w: "100%",
   pos: "sticky",
-  top: "85%",
-  zIndex: "1",
+  top: "80%",
+  zIndex: "2",
   justifyContent: "flex-end",
 };

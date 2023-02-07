@@ -38,7 +38,7 @@ export const AboutAfterHeadingMain = {
   direction: { base: "column", sm: "column", md: "row" },
   justifyContent: "center",
   m: "1",
-  alignItems: "center",
+  alignItems: {base:"center",md:"flex-start"},
   gap: 1,
 };
 export const AboutProfilePicture = {

@@ -38,12 +38,12 @@ export const LProjectDetailsFlexHeading = {
 export const LProjectDetailsHeading1 = {
   transition: "500ms",
   color: "blue.800",
-  fontSize: "xl",
+  fontSize: "lg",
   my: "4",
 };
 export const LProjectDetailsHeading2 = {
   transition: "500ms",
-  fontSize: "xl",
+  fontSize: "lg",
   color: "blue.600",
   my: "4",
 };

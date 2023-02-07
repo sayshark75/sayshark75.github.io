@@ -26,7 +26,7 @@ export const indianExpressLive = "https://sayshark75.github.io/bewildered-moon-2
 
 export const myTheresaGithub = "https://github.com/sayshark75/teeny-wool-9254";
 
-export const myTheresaLive = "https://incredible-begonia-aec486.netlify.app/";
+export const myTheresaLive = "https://my-fashion-cart.netlify.app/";
 
 export const APrimeLive = "https://a-prime.vercel.app/";
 

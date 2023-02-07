@@ -26,7 +26,7 @@ export const ProjectDetailsViewButtons = {
 };
 export const ProjectDeatailsFlexMain = {
   transition: "500ms",
-  w: { base: "auto", sm: "auto", md: "500px" },
+  w: { base: "auto", sm: "auto", md: "435px" },
   direction: "column",
 };
 export const ProjectDetailsFlexHeading = {
@@ -38,12 +38,12 @@ export const ProjectDetailsFlexHeading = {
 export const ProjectDetailsHeading1 = {
   transition: "500ms",
   color: "white",
-  fontSize: "xl",
+  fontSize: "lg",
   my: "4",
 };
 export const ProjectDetailsHeading2 = {
   transition: "500ms",
-  fontSize: "xl",
+  fontSize: "lg",
   color: "whiteAlpha.700",
   my: "4",
 };
