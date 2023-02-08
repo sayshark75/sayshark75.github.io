@@ -1,3 +1,4 @@
+import { Blue, DarkBlue, White } from "../ColorPallet";
 
   export const LhomeParentFlex = {
     mt: { base: "30px", md: "80px" },
@@ -13,11 +14,11 @@
     borderRadius: "3",
     size: "sm",
     m:{base:"1px",sm:"2",md:"3",lg:"5",xl:"6"},
-    color: "white",
-    bgColor: "blue.700",
+    color: White,
+    bgColor: DarkBlue,
     transition: "700ms",
-    _hover: { bgColor: "white", color: "blue.500" },
-    _active: { backgroundColor: "blue.500", color: "white" },
+    _hover: { bgColor: White, color: Blue },
+    _active: { backgroundColor: Blue, color: White },
     fontSize:"20px",
   };
   
@@ -25,20 +26,20 @@
     // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
     transition: "500ms",
     fontSize:{ base: "34px", sm: "40px", md: "64px", lg: "86",xl:"108px" },
-    color: "blue.700",
+    color: DarkBlue,
   };
 
   export const Lheading2 = {
     // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
     transition: "500ms",
     fontSize:{ base: "34px", sm: "40px", md: "64px", lg: "86",xl:"108px" },
-    color: "blue.500",
+    color: Blue,
   };
 
   export const LaboutText = {
     as: "b",
     p: "8",
     transition: "500ms",
-    color: "blue.700",
+    color: DarkBlue,
     textAlign:"justify",
   };

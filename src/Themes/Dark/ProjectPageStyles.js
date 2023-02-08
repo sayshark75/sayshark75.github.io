@@ -1,8 +1,10 @@
+import { White, WhiteTrans2, Black, grayBorder, WhiteTrans0 } from "../ColorPallet";
+
 export const ProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
-  border: "8px double gray",
-  bgColor: "whiteAlpha.100",
+  border: `8px double ${grayBorder}`,
+  bgColor: WhiteTrans0,
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
@@ -37,21 +39,21 @@ export const ProjectDetailsFlexHeading = {
 };
 export const ProjectDetailsHeading1 = {
   transition: "500ms",
-  color: "white",
+  color: White,
   fontSize: "lg",
   my: "4",
 };
 export const ProjectDetailsHeading2 = {
   transition: "500ms",
   fontSize: "lg",
-  color: "whiteAlpha.700",
+  color: WhiteTrans2,
   my: "4",
 };
 export const ProjectDetailsTextSummary = {
   transition: "500ms",
   as: "b",
   textAlign: "justify",
-  color: "white",
+  color: White,
 };
 export const ProjectDetailsTextStackFlex = {
   transition: "500ms",
@@ -61,21 +63,21 @@ export const ProjectDetailsTextStackFlex = {
 };
 export const ProjectDetailsToolTip = {
   transition: "500ms",
-  bgColor: "white",
-  color: "black",
+  bgColor: White,
+  color: Black,
 };
 export const ProjectDetailsIconButtonTop = {
   transition: "500ms",
   fontSize: "16px",
   width: "7rem",
-  _hover: { bgColor: "black", color: "white" },
-  bgColor: "white",
+  _hover: { bgColor: Black, color: White },
+  bgColor: White,
 };
 export const ProjectDetailsIconButton = {
   transition: "500ms",
   fontSize: "30px",
-  _hover: { bgColor: "black" },
-  bgColor: "white",
+  _hover: { bgColor: Black },
+  bgColor: White,
 };
 
 export const GithubCalenderTheme = {
@@ -86,12 +88,12 @@ export const GithubCalenderTheme = {
   level0: "#202020",
 };
 export const GithubCard1 = {
-  bgColor:"272727ff",
-  titleColor:"3C80FFff",
-  textColor:"76A6FFff",
-  ringColor:"10FF14ff",
-  customTitle:"My Statistics"
-}
+  bgColor: "272727ff",
+  titleColor: "3C80FFff",
+  textColor: "76A6FFff",
+  ringColor: "10FF14ff",
+  customTitle: "My Statistics",
+};
 
 export const MainProjectHeadFlex = {
   transition: "500ms",
@@ -106,16 +108,16 @@ export const MainProjectHeadlineFlex = {
 };
 export const MainProjectHeading1 = {
   transition: "500ms",
-  color: "whiteAlpha.700",
+  color: WhiteTrans2,
   my: "4",
 };
 export const MainProjectHeading2 = {
   transition: "500ms",
-  color: "white",
+  color: White,
   my: "4",
 };
 export const CalColorText = {
-  color: "white",
+  color: White,
 };
 export const CalStyleProps = {
   fontSize: 16,

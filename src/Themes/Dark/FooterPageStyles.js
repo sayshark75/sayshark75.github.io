@@ -1,6 +1,8 @@
+import { White, Black } from "../ColorPallet";
+
 export const FooterTopBox = {
   transition: "500ms",
-  bgColor: "black",
+  bgColor: Black,
   justifyContent: "center",
   alignItems: "center",
   w: "100%",
@@ -10,7 +12,7 @@ export const FooterTopBox = {
 
 export const FooterTextStyle = {
   transition: "500ms",
-  color: "white",
+  color: White,
   as: "b",
   fontSize: "lg",
 };

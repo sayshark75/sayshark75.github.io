@@ -1,12 +1,14 @@
+import { DarkBlue, White, WhiteTrans1, WhiteTrans3 } from "../ColorPallet";
+
 export const LNavabrButtonStyleLaptop = {
   transition: "500ms",
   gap: 1,
   borderRadius: "0px",
-  bgColor: "whiteAlpha.600",
-  color: "blue.700",
+  bgColor: WhiteTrans1,
+  color: DarkBlue,
   _hover: {
-    backgroundColor: "blue.700",
-    color: "whiteAlpha.800",
+    backgroundColor: DarkBlue,
+    color: WhiteTrans3,
   },
 };
 
@@ -16,14 +18,14 @@ export const LNavbarLaptopBar = {
   zIndex: "1",
   top: "0px",
   w: "100%",
-  bgColor: "white",
-  color: "blue.700",
+  bgColor: White,
+  color: DarkBlue,
   gap: "2",
   p: "1",
 };
 export const LNavbarLaptopLogoStyle = {
   transition: "500ms",
-  color: "blue.700",
+  color: DarkBlue,
   cursor: "pointer",
   _hover: { textShadow: "#616c6e 1px 1px 2px" },
   ml: 3,
@@ -39,8 +41,8 @@ export const LNavbarMobileBar = {
   zIndex: "1",
   h: "70px",
   w: "100%",
-  bgColor: "white",
-  color: "blue.700",
+  bgColor: White,
+  color: DarkBlue,
   justifyContent: "center",
 };
 export const LNavbarButtonStyleMobile = {
@@ -48,10 +50,10 @@ export const LNavbarButtonStyleMobile = {
   h: "100%",
   fontSize: "sm",
   borderRadius: "0px",
-  bgColor: "whiteAlpha.800",
-  color: "blue.700",
-  _active: { backgroundColor: "blue.700", color: "whiteAlpha.800" },
-  _hover: { backgroundColor: "whiteAlpha.800", color: "blue.700" },
+  bgColor: WhiteTrans3,
+  color: DarkBlue,
+  _active: { backgroundColor: DarkBlue, color: WhiteTrans3 },
+  _hover: { backgroundColor: WhiteTrans3, color: DarkBlue },
 };
 export const LNavbarButtonInsideBoxMobile = {
   transition: "500ms",
@@ -65,9 +67,9 @@ export const LNavbarThemeButtonConfig = {
   borderRadius: "50%",
   size: "md",
   mx: { base: "3", sm: "2", md: "3", lg: "5", xl: "10" },
-  color: "white",
-  bgColor: "blue.700",
-  _hover: { bgColor: "white", color: "blue.700" },
-  _active: { backgroundColor: "blue.700", color: "white" },
+  color: White,
+  bgColor: DarkBlue,
+  _hover: { bgColor: White, color: DarkBlue },
+  _active: { backgroundColor: DarkBlue, color: White },
 };
 

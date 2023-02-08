@@ -1,11 +1,13 @@
+import { Blue, DarkBlue, White } from "../ColorPallet";
+
 export const LContactHeading1 = {
   transition: "500ms",
-  color: "blue.700",
+  color: DarkBlue,
   my: "4",
 };
 export const LContactHeading2 = {
   transition: "500ms",
-  color: "blue.500",
+  color: Blue,
   my: "4",
 };
 export const LContactFlexMain = {
@@ -19,9 +21,9 @@ export const LContactButtons = {
   fontSize:"24px",
   size: "md",
   m: { base: "1px", sm: "2", md: "3", lg: "5", xl: "6" },
-  color: "white",
-  bgColor: "blue.700",
+  color: White,
+  bgColor: DarkBlue,
   transition: "700ms",
-  _hover: { bgColor: "white", color: "blue.700" },
-  _active: { backgroundColor: "blue.700", color: "white" },
+  _hover: { bgColor: White, color: DarkBlue },
+  _active: { backgroundColor: DarkBlue, color: White },
 };

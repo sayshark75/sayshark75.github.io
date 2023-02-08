@@ -1,4 +1,4 @@
-
+import { White, WhiteTrans2, Black } from "../ColorPallet";
 
   export const homeParentFlex = {
     mt: { base: "30px", md: "80px" },
@@ -13,11 +13,11 @@
     borderRadius: "3",
     size: "sm",
     m:{base:"1px",sm:"2",md:"3",lg:"5",xl:"6"},
-    color: "black",
-    bgColor: "white",
+    color: Black,
+    bgColor: White,
     transition: "700ms",
-    _hover: { bgColor: "black", color: "white" },
-    _active: { backgroundColor: "white", color: "black" },
+    _hover: { bgColor: Black, color: White },
+    _active: { backgroundColor: White, color: Black },
     fontSize:"20px",
   };
   
@@ -26,13 +26,13 @@
     // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
     transition: "500ms",
     fontSize:{ base: "34px", sm: "40px", md: "64px", lg: "86",xl:"108px" },
-    color: "whiteAlpha.700",
+    color: WhiteTrans2,
   };
   export const heading2 = {
     // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
     transition: "500ms",
     fontSize:{ base: "34px", sm: "40px", md: "64px", lg: "86",xl:"108px" },
-    color: "white",
+    color: White,
   };
   export const aboutFlex = {
     m: "auto",
@@ -44,6 +44,6 @@
     as: "b",
     p: "8",
     transition: "500ms",
-    color: "whiteAlpha.700",
+    color: WhiteTrans2,
     textAlign:"justify",
   };

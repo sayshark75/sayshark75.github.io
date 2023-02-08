@@ -6,7 +6,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import { FadeIn } from "react-slide-fade-in";
-import { fadeInConfigLeft, fadeInConfigRight } from "./Animations/Animations";
+import { fadeInConfigLeft } from "./Animations/Animations";
 import TechnicalSkills from "./Components/TechnicalSkills";
 import Contact from "./Components/Contact";
 import { AppMainFlex } from "./Themes/Dark/AppPageStyles";
@@ -22,7 +22,7 @@ function App() {
       <FadeIn {...fadeInConfigLeft} durationInMilliseconds={1000} delayInMilliseconds={500}>
         <Home />
       </FadeIn>
-      <FadeIn {...fadeInConfigRight} durationInMilliseconds={1000} delayInMilliseconds={1000}>
+      <FadeIn {...fadeInConfigLeft} durationInMilliseconds={1000} delayInMilliseconds={1000}>
         <About />
       </FadeIn>
       <Projects />

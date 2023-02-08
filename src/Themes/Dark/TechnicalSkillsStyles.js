@@ -1,11 +1,13 @@
+import { White, WhiteTrans2 } from "../ColorPallet";
+
 export const TechSkillsHeading1 = {
   transition: "500ms",
-  color: "whiteAlpha.700",
+  color: WhiteTrans2,
   mt: "50px",
 };
 export const TechSkillsHeading2 = {
   transition: "500ms",
-  color: "white",
+  color: White,
   mt: "50px",
 };
 
@@ -36,7 +38,7 @@ export const TechSkillsGrid = {
 export const TechSkillsText = {
   transition: "500ms",
   as: "b",
-  color: "white",
+  color: White,
   fontSize: { base: "12px", sm: "sm", md: "md" },
 };
 

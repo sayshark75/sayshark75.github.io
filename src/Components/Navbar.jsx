@@ -76,9 +76,9 @@ const Navbar = () => {
       {/* Theme Preferences */}
       <Flex {...NavbarThemeMainFlex}>
         {theme ? (
-          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} icon={<MdDarkMode />} />
+          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} transition={"700ms"} icon={<MdDarkMode />} />
         ) : (
-          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} icon={<MdWbSunny />} />
+          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} transition={"700ms"} icon={<MdWbSunny />} />
         )}
       </Flex>
 

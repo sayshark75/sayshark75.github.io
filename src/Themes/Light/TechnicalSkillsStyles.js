@@ -1,11 +1,13 @@
+import { Blue, DarkBlue, White } from "../ColorPallet";
+
 export const LTechSkillsHeading1 = {
   transition: "500ms",
-  color: "blue.700",
+  color: DarkBlue,
   mt: "50px",
 };
 export const LTechSkillsHeading2 = {
   transition: "500ms",
-  color: "blue.500",
+  color: Blue,
   mt: "50px",
 };
 
@@ -36,6 +38,6 @@ export const LTechSkillsInGridFlex = {
 export const LTechSkillsText = {
   transition: "500ms",
   as: "b",
-  color: "white",
+  color: White,
   fontSize: { base: "12px", sm: "sm", md: "md" },
 };

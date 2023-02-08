@@ -1,7 +1,8 @@
+import { DarkBlue, White } from "../ColorPallet";
 
 export const LtoolTipStyle = {
-  bg: "white",
-  color: "blue.700",
+  bg: White,
+  color: DarkBlue,
   mt:"4",
   transition: "500ms"
 };

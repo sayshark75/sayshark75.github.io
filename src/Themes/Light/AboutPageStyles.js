@@ -1,13 +1,15 @@
+import { DarkBlue, Blue, White } from "../ColorPallet";
+
 export const LaboutButtonsTop = {
   borderRadius: "3",
   size: "xs",
   ml: "8",
   mr: "2",
-  color: "white",
-  bgColor: "blue.700",
+  color: White,
+  bgColor: DarkBlue,
   transition: "500ms",
-  _hover: { bgColor: "white", color: "blue.700" },
-  _active: { backgroundColor: "#35FC00", color: "white" },
+  _hover: { bgColor: White, color: DarkBlue },
+  _active: { backgroundColor: "#35FC00", color: White },
 };
 
 export const LAboutHeadFlex = {
@@ -20,13 +22,13 @@ export const LAboutHeadFlex = {
 
 export const LAboutHeadings = {
   transition: "500ms",
-  color: "blue.700",
+  color: DarkBlue,
   my: "4",
 };
 
 export const LAboutHeadings2 = {
   transition: "500ms",
-  color: "blue.500",
+  color: Blue,
   my: "4",
 };
 
@@ -39,7 +41,7 @@ export const LAboutProfilePicture = {
 export const LAboutSummaryText = {
   transition: "500ms",
   fontSize: "md",
-  color: "blue.700",
+  color: DarkBlue,
   as: "b",
   mx: "8",
 };
@@ -48,14 +50,14 @@ export const LAboutContactCopy = {
   transition: "500ms",
   as: "b",
   fontSize: "sm",
-  color: "blue.700",
+  color: DarkBlue,
   mx: "8",
 };
 
 export const LAboutSummaryInterest = {
   transition: "500ms",
   fontSize: "md",
-  color: "blue.700",
+  color: DarkBlue,
   py: "4",
   as: "b",
   mx: "8",
@@ -64,6 +66,6 @@ export const LAboutSummaryInterest = {
 export const LAboutIconText = {
   transition: "500ms",
   fontSize: "md",
-  color: "blue.700",
+  color: DarkBlue,
   as: "b",
 };

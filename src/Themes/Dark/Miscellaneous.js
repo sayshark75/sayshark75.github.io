@@ -1,7 +1,8 @@
+import { Black, White } from "../ColorPallet";
 
 export const toolTipStyle = {
-  bg: "white",
-  color: "black",
-  mt:"4",
-  transition: "500ms"
+  bg: White,
+  color: Black,
+  mt: "4",
+  transition: "500ms",
 };

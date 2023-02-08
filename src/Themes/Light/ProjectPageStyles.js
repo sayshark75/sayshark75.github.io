@@ -1,8 +1,10 @@
+import { Black, Blue, BluePlus, DarkBlue, ExtraDarkBlue, LightBluePlus, White } from "../ColorPallet";
+
 export const LProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
   border: "8px double #313c4e",
-  bgColor: "blue.100",
+  bgColor: LightBluePlus,
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
@@ -37,21 +39,21 @@ export const LProjectDetailsFlexHeading = {
 };
 export const LProjectDetailsHeading1 = {
   transition: "500ms",
-  color: "blue.800",
+  color: ExtraDarkBlue,
   fontSize: "lg",
   my: "4",
 };
 export const LProjectDetailsHeading2 = {
   transition: "500ms",
   fontSize: "lg",
-  color: "blue.600",
+  color: BluePlus,
   my: "4",
 };
 export const LProjectDetailsTextSummary = {
   transition: "500ms",
   as: "b",
   textAlign: "justify",
-  color: "blue.800",
+  color: ExtraDarkBlue,
 };
 export const LProjectDetailsTextStackFlex = {
   transition: "500ms",
@@ -61,22 +63,22 @@ export const LProjectDetailsTextStackFlex = {
 };
 export const LProjectDetailsToolTip = {
   transition: "500ms",
-  bgColor: "blue.700",
-  color: "white",
+  bgColor: DarkBlue,
+  color: White,
 };
 
 export const LProjectDetailsIconButtonTop = {
   transition: "500ms",
   fontSize: "16px",
   width: "7rem",
-  _hover: { bgColor: "black", color: "white" },
-  bgColor: "white",
+  _hover: { bgColor: Black, color: White },
+  bgColor: White,
 };
 export const LProjectDetailsIconButton = {
   transition: "500ms",
   fontSize: "30px",
-  _hover: { bgColor: "black" },
-  bgColor: "white",
+  _hover: { bgColor: Black },
+  bgColor: White,
 };
 
 export const LGithubCalenderTheme = {
@@ -97,16 +99,16 @@ export const LGithubCard1 = {
 
 export const LMainProjectHeading1 = {
   transition: "500ms",
-  color: "blue.700",
+  color: DarkBlue,
   my: "4",
 };
 export const LMainProjectHeading2 = {
   transition: "500ms",
-  color: "blue.500",
+  color: Blue,
   my: "4",
 };
 export const LCalColorText = {
-  color: "blue.700",
+  color: DarkBlue,
 };
 export const LCalStyleProps = {
   fontSize: 16,

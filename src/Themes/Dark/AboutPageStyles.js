@@ -1,13 +1,15 @@
+import { White, WhiteTrans3, WhiteTrans2, Black } from "../ColorPallet";
+
 export const aboutButtonsTop = {
   borderRadius: "3",
   size: "xs",
   ml: "8",
   mr: "2",
-  color: "black",
-  bgColor: "white",
+  color: Black,
+  bgColor: White,
   transition: "500ms",
-  _hover: { bgColor: "#0086FC", color: "white" },
-  _active: { backgroundColor: "#35FC00", color: "black" },
+  _hover: { bgColor: "#0086FC", color: White },
+  _active: { backgroundColor: "#35FC00", color: Black },
 };
 
 export const AboutHeadFlex = {
@@ -19,12 +21,12 @@ export const AboutHeadFlex = {
 };
 export const AboutHeadings = {
   transition: "500ms",
-  color: "whiteAlpha.700",
+  color: WhiteTrans2,
   my: "4",
 };
 export const AboutHeadings2 = {
   transition: "500ms",
-  color: "white",
+  color: White,
   my: "4",
 };
 export const AboutAfterHeading = {
@@ -38,33 +40,33 @@ export const AboutAfterHeadingMain = {
   direction: { base: "column", sm: "column", md: "row" },
   justifyContent: "center",
   m: "1",
-  alignItems: {base:"center",md:"flex-start"},
+  alignItems: { base: "center", md: "flex-start" },
   gap: 1,
 };
 export const AboutProfilePicture = {
   transition: "500ms",
-  border: "8px solid white",
+  border: `8px solid ${White}`,
   w: { base: "250px", sm: "300px", md: "500px" },
 };
 export const AboutSummaryText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  color: "whiteAlpha.800",
+  color: WhiteTrans3,
   mx: "8",
 };
 export const AboutContactCopy = {
   transition: "500ms",
   as: "b",
   fontSize: "sm",
-  color: "whiteAlpha.800",
+  color: WhiteTrans3,
   mx: "8",
 };
 export const AboutSummaryInterest = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  color: "whiteAlpha.800",
+  color: WhiteTrans3,
   py: "4",
   mx: "8",
 };
@@ -72,5 +74,5 @@ export const AboutIconText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  color: "whiteAlpha.800",
+  color: WhiteTrans3,
 };
