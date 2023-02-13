@@ -29,7 +29,6 @@ import {
 
 const ProjectsCard = ({ live, github, imgDark, imgLight, heading1, heading2, summary, TStack }) => {
   const { theme } = useContext(MyThemeContext);
-  // let TStack = [false, false, false, false, false, false, false];
 
   return (
     <Flex {...(theme ? ProjectHeadFlex : LProjectHeadFlex)}>

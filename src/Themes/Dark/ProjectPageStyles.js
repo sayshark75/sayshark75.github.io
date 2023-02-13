@@ -1,13 +1,13 @@
-import { White, WhiteTrans2, Black, grayBorder, WhiteTrans0 } from "../ColorPallet";
+import { White, WhiteTrans2, Black, WhiteTrans0 } from "../ColorPallet";
 
 export const ProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
-  border: `8px double ${grayBorder}`,
   bgColor: WhiteTrans0,
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
+  boxShadow:'2xl',
   p: "5",
   justifyContent: "center",
   alignItems: "center",
@@ -118,6 +118,10 @@ export const MainProjectHeading2 = {
 };
 export const CalColorText = {
   color: White,
+  p:"4",
+  borderRadius:"8",
+  _hover:{boxShadow: "dark-lg"},
+  transition:"700ms"
 };
 export const CalStyleProps = {
   fontSize: 16,

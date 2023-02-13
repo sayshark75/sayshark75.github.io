@@ -20,4 +20,7 @@ const BlackTrans3 = "blackAlpha.600";
 const Black = "black";
 const grayBorder = "gray";
 
+
+
+
 export { DarkBlue, Blue, LightestBlue, BluePlus, White,WhiteTrans0, WhiteTrans1, WhiteTrans3, WhiteTrans2, Black, BlackTrans1, BlackTrans2,BlackTrans3,grayBorder,LightBluePlus,ExtraDarkBlue };

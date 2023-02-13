@@ -1,4 +1,4 @@
-import { White, WhiteTrans2, Black, BlackTrans1,BlackTrans3 } from "../ColorPallet";
+import { White, WhiteTrans2, Black, BlackTrans1, BlackTrans3 } from "../ColorPallet";
 
 export const NavabrButtonStyleLaptop = {
   transition: "500ms",
@@ -78,6 +78,7 @@ export const NavbarThemeMainFlex = {
   w: "100%",
   pos: "sticky",
   top: "80%",
+  right:"85%",
   zIndex: "2",
   justifyContent: "flex-end",
 };

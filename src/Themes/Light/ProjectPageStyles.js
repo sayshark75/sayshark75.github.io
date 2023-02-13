@@ -1,10 +1,10 @@
-import { Black, Blue, BluePlus, DarkBlue, ExtraDarkBlue, LightBluePlus, White } from "../ColorPallet";
+import { Black, Blue, BluePlus, DarkBlue, ExtraDarkBlue, White } from "../ColorPallet";
 
 export const LProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
-  border: "8px double #313c4e",
-  bgColor: LightBluePlus,
+  boxShadow: "2xl",
+  bgColor: White,
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
@@ -86,16 +86,16 @@ export const LGithubCalenderTheme = {
   level3: "#1C68CA",
   level2: "#103769",
   level1: "#1C2E45",
-  level0: "#D1FEFF",
+  level0: "#FFFFFF",
 };
 
 export const LGithubCard1 = {
-  bgColor:"D3FFF1FF",
-  titleColor:"1C2E45FF",
-  textColor:"1C68CA",
-  ringColor:"00CA09FF",
-  customTitle:"My Statistics"
-}
+  bgColor: "FFFFFF",
+  titleColor: "1C2E45FF",
+  textColor: "1C68CA",
+  ringColor: "00CA09FF",
+  customTitle: "My Statistics",
+};
 
 export const LMainProjectHeading1 = {
   transition: "500ms",
@@ -109,6 +109,10 @@ export const LMainProjectHeading2 = {
 };
 export const LCalColorText = {
   color: DarkBlue,
+  p:"4",
+  borderRadius:"8",
+  _hover:{boxShadow: "2xl"},
+  transition:"700ms"
 };
 export const LCalStyleProps = {
   fontSize: 16,
