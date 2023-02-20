@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Button, Flex, Heading, IconButton, Image, Text } from "@chakra-ui/react";
-import copy from "copy-to-clipboard";
-import {MdOutlineContentCopy,MdOfflineBolt,MdSportsEsports,MdGrass} from "react-icons/md";
+
+import {MdOfflineBolt,MdSportsEsports,MdGrass} from "react-icons/md";
 import {BsFillPlayCircleFill} from "react-icons/bs";
 import { ScrollContext } from "../Contexts/ScrollContext";
 
@@ -9,7 +9,6 @@ import {
   AboutAfterHeading,
   AboutAfterHeadingMain,
   aboutButtonsTop,
-  AboutContactCopy,
   AboutHeadFlex,
   AboutHeadings,
   AboutHeadings2,
@@ -19,18 +18,18 @@ import {
   AboutSummaryText,
 } from "../Themes/Dark/AboutPageStyles";
 import { ProfilePicBlue, ProfilePicBW } from "../Sources/Images";
-import { LaboutButtonsTop, LAboutContactCopy, LAboutHeadings, LAboutHeadings2, LAboutIconText, LAboutProfilePicture, LAboutSummaryInterest, LAboutSummaryText } from "../Themes/Light/AboutPageStyles";
+import { LaboutButtonsTop, LAboutHeadings, LAboutHeadings2, LAboutIconText, LAboutProfilePicture, LAboutSummaryInterest, LAboutSummaryText } from "../Themes/Light/AboutPageStyles";
 import { MyThemeContext } from "../Contexts/themeContext";
+import { resumelink } from "../Sources/Links";
 
 const About = () => {
   const { AboutRef } = useContext(ScrollContext);
   const { theme } = useContext(MyThemeContext);
 
-  const copyPhoneFun = () => {
-    copy("7588244148");
-  };
-  const copyMailFun = () => {
-    copy("sayyedsharuk75@gmail.com");
+  
+
+  const handleClick = () => {
+    window.open(resumelink, "_blank");
   };
 
   return (
@@ -49,20 +48,9 @@ const About = () => {
               <Text {...(theme ? AboutSummaryText : LAboutSummaryText)}>
                 Hi Everyone, I am Sayyed Sharuk, from Ahmednagar, Maharashtra. I have completed my Post Graduation in Master of Electronics Science under University of Pune.
               </Text>
-
-              <Flex pt={2} justifyContent={"flex-start"}>
-              <Button onClick={copyPhoneFun} {...(theme ? aboutButtonsTop : LaboutButtonsTop)} mr={1} ><MdOutlineContentCopy style={{ fontSize: "16px" }} />Copy</Button>
-                <Text {...(theme ? AboutContactCopy : LAboutContactCopy)} ml={1}>
-                  +91 7588244148
-                </Text>
-              </Flex>
-
-              <Flex pt={2} justifyContent={"flex-start"}>
-                <Button onClick={copyMailFun} {...(theme ? aboutButtonsTop : LaboutButtonsTop)} mr={1} ><MdOutlineContentCopy style={{ fontSize: "16px" }} />Copy</Button>
-                <Text fontSize={"sm"} {...(theme ? AboutContactCopy : LAboutContactCopy)} ml={1}>
-                  sayyedsharuk75@gmail.com
-                </Text>
-              </Flex>
+              <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
+                <Button ml={"8"} my={"4"} bgColor={"white"} boxShadow={"2xl"} _hover={{bgColor:"black",color:"white"}} p={"6"} fontSize={"xl"} >Resume</Button>
+              </a>
 
               <Text {...(theme ? AboutSummaryInterest : LAboutSummaryInterest)}>Some of My Interest apart from Coding:</Text>
               <Flex m={"1"}>

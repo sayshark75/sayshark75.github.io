@@ -25,6 +25,10 @@ import {
   SiVercel,
   SiGithub,
   SiVisualstudiocode,
+  SiVite,
+  SiNextdotjs,
+  SiGit,
+  SiNpm,
 } from "react-icons/si";
 import { ScrollContext } from "../Contexts/ScrollContext";
 import { useContext } from "react";
@@ -41,68 +45,93 @@ const TechnicalSkills = () => {
         <Heading {...(theme ? TechSkillsHeading1 : LTechSkillsHeading1)}>Technical&nbsp;</Heading>
         <Heading {...(theme ? TechSkillsHeading2 : LTechSkillsHeading2)}>Skills</Heading>
       </Flex>
-      <SimpleGrid {...TechSkillsGrid}>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiHtml5 {...TechSkillsIconsStyle} color={"#FF7400"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>HTML5</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiCss3 {...TechSkillsIconsStyle} color={"#008BFF"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>CSS3</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiJavascript {...TechSkillsIconsStyle} color={"#FFFB00"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>JavaScript</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiReact {...TechSkillsIconsStyle} color={"#00B2FF"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>React</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiTypescript {...TechSkillsIconsStyle} color={"#0070FF"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Typescript</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiNodedotjs {...TechSkillsIconsStyle} color={"#1F9A28"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Node</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiExpress {...TechSkillsIconsStyle} color={"#ffffff"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Express</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiMongodb {...TechSkillsIconsStyle} color={"#0DAB09"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>MongoDB</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiChakraui {...TechSkillsIconsStyle} color={"#00E5DE"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Chakra UI</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiMaterialui {...TechSkillsIconsStyle} color={"#006CE5"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Material UI</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiBootstrap {...TechSkillsIconsStyle} color={"#8700FF"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Bootstrap</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiNetlify {...TechSkillsIconsStyle} color={"#00C5FF"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Netlify</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiVercel {...TechSkillsIconsStyle} color={"#ffffff"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Vercel</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiGithub {...TechSkillsIconsStyle} color={"#ffffff"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>GitHub</Text>
-        </Flex>
-        <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
-          <SiVisualstudiocode {...TechSkillsIconsStyle} color={"#0093FF"} />
-          <Text {...(theme ? TechSkillsText : LTechSkillsText)}>VS Code</Text>
-        </Flex>
-      </SimpleGrid>
+      <Flex borderRadius={"8"} mt={"4"} px={"8"} py={"2"} boxShadow={"2xl"} bgColor={"white"} direction={"column"}>
+        <Text fontSize={"2xl"}>Languages</Text>
+        <SimpleGrid {...TechSkillsGrid}>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiHtml5 {...TechSkillsIconsStyle} color={"#FF7400"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>HTML5</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiCss3 {...TechSkillsIconsStyle} color={"#008BFF"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>CSS3</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiJavascript {...TechSkillsIconsStyle} color={"#FFFB00"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>JavaScript</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiTypescript {...TechSkillsIconsStyle} color={"#0070FF"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Typescript</Text>
+          </Flex>
+        </SimpleGrid>
+        <Text fontSize={"2xl"}>Frameworks and Libraries</Text>
+        <SimpleGrid {...TechSkillsGrid}>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiReact {...TechSkillsIconsStyle} color={"#00B2FF"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>React</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiNodedotjs {...TechSkillsIconsStyle} color={"#1F9A28"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Node</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiExpress {...TechSkillsIconsStyle} color={"#ffffff"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Express</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiChakraui {...TechSkillsIconsStyle} color={"#00E5DE"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Chakra UI</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiMaterialui {...TechSkillsIconsStyle} color={"#006CE5"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Material UI</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiBootstrap {...TechSkillsIconsStyle} color={"#8700FF"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Bootstrap</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiVite {...TechSkillsIconsStyle} color={"#B00AFE"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Vite</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiNextdotjs {...TechSkillsIconsStyle} color={"#FFFFFF"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>NextJS</Text>
+          </Flex>
+        </SimpleGrid>
+        <Text fontSize={"2xl"}>Tools and Database</Text>
+        <SimpleGrid {...TechSkillsGrid}>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiMongodb {...TechSkillsIconsStyle} color={"#0DAB09"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>MongoDB</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiNetlify {...TechSkillsIconsStyle} color={"#00C5FF"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Netlify</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiGit {...TechSkillsIconsStyle} color={"#FE750A"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Git</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiNpm {...TechSkillsIconsStyle} color={"#FE0A0A"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>NPM</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiVercel {...TechSkillsIconsStyle} color={"#ffffff"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>Vercel</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiGithub {...TechSkillsIconsStyle} color={"#ffffff"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>GitHub</Text>
+          </Flex>
+          <Flex {...(theme ? TechSkillsInGridFlex : LTechSkillsInGridFlex)}>
+            <SiVisualstudiocode {...TechSkillsIconsStyle} color={"#0093FF"} />
+            <Text {...(theme ? TechSkillsText : LTechSkillsText)}>VS Code</Text>
+          </Flex>
+        </SimpleGrid>
+      </Flex>
     </Flex>
   );
 };

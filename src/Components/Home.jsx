@@ -1,11 +1,11 @@
 import { Flex, Heading, Image, Text, Tooltip, IconButton } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { VscGithub } from "react-icons/vsc";
-import { MdAlternateEmail, MdCall, MdContactPage, MdMyLocation } from "react-icons/md";
+import { MdAlternateEmail, MdCall, MdMyLocation } from "react-icons/md";
 import { BsLinkedin, BsTwitter } from "react-icons/bs";
 import { aboutFlex, aboutText, heading1, heading2, homeButtonsTop, homeParentFlex } from "../Themes/Dark/HomePageStyles";
 import { toolTipStyle } from "../Themes/Dark/Miscellaneous";
-import { githubLink, linkedInLink, locationLink, mailLink, phoneLink, resumelink, twitterLink } from "../Sources/Links";
+import { githubLink, linkedInLink, locationLink, mailLink, phoneLink, twitterLink } from "../Sources/Links";
 import { ScrollContext } from "../Contexts/ScrollContext";
 import { typeImageBase, typeImageBaseLite } from "../Sources/Images";
 import { FadeIn } from "react-slide-fade-in";
@@ -17,9 +17,7 @@ import { LtoolTipStyle } from "../Themes/Light/Miscellaneous";
 const Home = () => {
   const { HomeRef } = useContext(ScrollContext);
   const { theme } = useContext(MyThemeContext);
-  const handleClick = () => {
-    window.open(resumelink, "_blank");
-  };
+  
   return (
     <>
       <Flex ref={HomeRef} {...homeParentFlex}>
@@ -59,13 +57,6 @@ const Home = () => {
             <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"LinkedIn"}>
               <a href={linkedInLink} target={"_blank"} rel="noreferrer">
                 <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<BsLinkedin />} />
-              </a>
-            </Tooltip>
-          </FadeIn>
-          <FadeIn {...fadeInConfigBottom} delayInMilliseconds={800}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Resume"}>
-              <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
-                <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<MdContactPage />} />
               </a>
             </Tooltip>
           </FadeIn>
