@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Button, Flex, Heading, IconButton, Image, Text } from "@chakra-ui/react";
 
-import {MdOfflineBolt,MdSportsEsports,MdGrass} from "react-icons/md";
-import {BsFillPlayCircleFill} from "react-icons/bs";
+import { MdOfflineBolt, MdSportsEsports, MdGrass } from "react-icons/md";
+import { BsFillPlayCircleFill } from "react-icons/bs";
 import { ScrollContext } from "../Contexts/ScrollContext";
 
 import {
@@ -26,8 +26,6 @@ const About = () => {
   const { AboutRef } = useContext(ScrollContext);
   const { theme } = useContext(MyThemeContext);
 
-  
-
   const handleClick = () => {
     window.open(resumelink, "_blank");
   };
@@ -41,15 +39,17 @@ const About = () => {
         </Flex>
         <Flex {...AboutAfterHeading}>
           <Flex {...AboutAfterHeadingMain}>
-            <Flex>
+            <Flex flex={2}>
               <Image {...(theme ? AboutProfilePicture : LAboutProfilePicture)} src={theme ? ProfilePicBW : ProfilePicBlue} />
             </Flex>
-            <Flex direction={"column"}>
+            <Flex flex={5} direction={"column"}>
               <Text {...(theme ? AboutSummaryText : LAboutSummaryText)}>
-                Hi Everyone, I am Sayyed Sharuk, from Ahmednagar, Maharashtra. I have completed my Post Graduation in Master of Electronics Science under University of Pune.
+                Hi, I'm Sayyed Sharuk from Ahmednagar, Maharashtra, currently learning Full Stack development at Masai School. I hold a Post Graduation in Master of Electronics Science from the University of Pune. Passionate about creating innovative digital solutions, I have a strong foundation in web development, including HTML, CSS, JavaScript, and React. Always eager to learn and explore new technologies, I'm excited about the future of web development and the endless possibilities it offers. Thanks for reading, and I hope to connect with you soon!
               </Text>
               <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
-                <Button ml={"8"} my={"4"} bgColor={"white"} boxShadow={"2xl"} _hover={{bgColor:"black",color:"white"}} p={"6"} fontSize={"xl"} >Resume</Button>
+                <Button ml={"8"} my={"4"} bgColor={"white"} boxShadow={"2xl"} _hover={{ bgColor: "black", color: "white" }} p={"6"} fontSize={"xl"}>
+                  Resume
+                </Button>
               </a>
 
               <Text {...(theme ? AboutSummaryInterest : LAboutSummaryInterest)}>Some of My Interest apart from Coding:</Text>

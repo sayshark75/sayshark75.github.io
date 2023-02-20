@@ -52,6 +52,7 @@ export const AboutSummaryText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
+  textAlign:"justify",
   color: WhiteTrans3,
   mx: "8",
 };

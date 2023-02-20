@@ -42,6 +42,7 @@ export const LAboutSummaryText = {
   transition: "500ms",
   fontSize: "md",
   color: DarkBlue,
+  textAlign:"justify",
   as: "b",
   mx: "8",
 };

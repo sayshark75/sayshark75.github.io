@@ -28,7 +28,7 @@ const Home = () => {
         <Image mt={"8"} src={theme ? typeImageBase : typeImageBaseLite} alt="Typing SVG" />
         <Flex {...aboutFlex}>
           <Text {...(theme ? aboutText : LaboutText)}>
-            A Full Stack Developer who like's solving problems and building projects. Equipped with a variety of technologies and tools to help build the best possible product.
+          I'm a Full Stack Developer who enjoys solving problems and building quality projects. With a diverse set of skills and technologies, I develop robust and efficient products. I keep up with the latest advancements in the field, and work well with teams to deliver the best possible results.
           </Text>
         </Flex>
         <Flex m={"8"} gap={"3"}>
