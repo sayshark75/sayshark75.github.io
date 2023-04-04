@@ -15,6 +15,7 @@ export const ContactFlexMain = {
   direction: "column",
   justifyContent: "center",
   alignItems: "center",
+  mt:"12"
 };
 export const ContactButtons = {
   borderRadius: "50%",

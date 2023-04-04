@@ -24,7 +24,7 @@ import {
   LNavbarLaptopLogoStyle,
   LNavbarThemeButtonConfig,
 } from "../Themes/Light/NavbarStyles";
-import { resumelink } from "../Sources/Links.js";
+import { resumeDownload, resumelink } from "../Sources/Links.js";
 import { ScrollContext } from "../Contexts/ScrollContext";
 
 const Navbar = () => {
@@ -65,7 +65,7 @@ const Navbar = () => {
               <MdContacts /> Contact
             </Button>
 
-            <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
+            <a href={resumeDownload} onClick={handleClick}>
               <Button {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
                 <MdContactPage /> Resume
               </Button>
@@ -83,7 +83,7 @@ const Navbar = () => {
       </Flex>
 
       {/* Mobile Navbar */}
-      <Show below="md">
+      <Show breakpoint='(max-width: 767px)'>
         <Flex {...(theme ? NavbarMobileBar : LNavbarMobileBar)}>
           <Button onClick={handleHomeRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
             <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
@@ -114,7 +114,7 @@ const Navbar = () => {
             </Flex>
           </Button>
           <Button {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
-            <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
+            <a href={resumeDownload} onClick={handleClick}>
               <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
                 <MdContactPage style={{ fontSize: "22px" }} />
                 Resume

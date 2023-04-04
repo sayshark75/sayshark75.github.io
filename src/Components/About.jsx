@@ -20,7 +20,7 @@ import {
 import { ProfilePicBlue, ProfilePicBW } from "../Sources/Images";
 import { LaboutButtonsTop, LAboutHeadings, LAboutHeadings2, LAboutIconText, LAboutProfilePicture, LAboutSummaryInterest, LAboutSummaryText } from "../Themes/Light/AboutPageStyles";
 import { MyThemeContext } from "../Contexts/themeContext";
-import { resumelink } from "../Sources/Links";
+import { resumeDownload, resumelink } from "../Sources/Links";
 
 const About = () => {
   const { AboutRef } = useContext(ScrollContext);
@@ -46,7 +46,7 @@ const About = () => {
               <Text {...(theme ? AboutSummaryText : LAboutSummaryText)}>
                 Hi, I'm Sayyed Sharuk from Ahmednagar, Maharashtra, currently learning Full Stack development at Masai School. I hold a Post Graduation in Master of Electronics Science from the University of Pune. Passionate about creating innovative digital solutions, I have a strong foundation in web development, including HTML, CSS, JavaScript, and React. Always eager to learn and explore new technologies, I'm excited about the future of web development and the endless possibilities it offers. Thanks for reading, and I hope to connect with you soon!
               </Text>
-              <a href="https://drive.google.com/uc?export=download&id=1JR1tvkUMpBiSejjOEKKT9B7S2XTZHtpv" onClick={handleClick}>
+              <a href={resumeDownload} onClick={handleClick}>
                 <Button ml={"8"} my={"4"} bgColor={"white"} boxShadow={"2xl"} _hover={{ bgColor: "black", color: "white" }} p={"6"} fontSize={"xl"}>
                   Resume
                 </Button>

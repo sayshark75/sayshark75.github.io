@@ -17,7 +17,7 @@ import { LAppMainFlex } from "./Themes/Light/AppPageStyles";
 function App() {
   const { theme } = useContext(MyThemeContext);
   return (
-    <Flex fontFamily={"kanit"} direction={"column"} sx={theme?{...AppMainFlex}:{...LAppMainFlex}}>
+    <Flex fontFamily={"kanit"} direction={"column"} alignItems={"center"} sx={theme?{...AppMainFlex}:{...LAppMainFlex}}>
       <Navbar />
       <FadeIn {...fadeInConfigLeft} durationInMilliseconds={1000} delayInMilliseconds={500}>
         <Home />

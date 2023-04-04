@@ -1,6 +1,6 @@
 import { Button, Flex, Heading, IconButton, Image, Text, Tooltip } from "@chakra-ui/react";
 import React, { useContext } from "react";
-import { SiChakraui,SiFirebase, SiCss3, SiTypescript, SiRedux, SiHtml5, SiJavascript, SiReact } from "react-icons/si";
+import { SiChakraui, SiFirebase, SiCss3, SiTypescript, SiRedux, SiHtml5, SiJavascript, SiReact } from "react-icons/si";
 import {
   ProjectDeatailsFlexMain,
   ProjectDetailsFlexHeading,
@@ -36,14 +36,10 @@ const ProjectsCard = ({ live, github, imgDark, imgLight, heading1, heading2, sum
         <Image src={theme ? imgDark : imgLight} {...ProjectImgStyle} />
         <Flex {...(theme ? ProjectDetailsViewButtons : LProjectDetailsViewButtons)}>
           <a href={live} target={"_blank"} rel="noreferrer">
-            <Button {...(theme ? ProjectDetailsIconButtonTop : LProjectDetailsIconButtonTop)} color={"green"}>
-              View Page
-            </Button>
+            <Button {...(theme ? ProjectDetailsIconButtonTop : LProjectDetailsIconButtonTop)}>View Page</Button>
           </a>
           <a href={github} target={"_blank"} rel="noreferrer">
-            <Button {...(theme ? ProjectDetailsIconButtonTop : LProjectDetailsIconButtonTop)} color={"green"}>
-              Github
-            </Button>
+            <Button {...(theme ? ProjectDetailsIconButtonTop : LProjectDetailsIconButtonTop)}>Github</Button>
           </a>
         </Flex>
       </Flex>
@@ -51,7 +47,7 @@ const ProjectsCard = ({ live, github, imgDark, imgLight, heading1, heading2, sum
       <Flex {...ProjectDeatailsFlexMain}>
         <Flex {...ProjectDetailsFlexHeading}>
           <Heading {...(theme ? ProjectDetailsHeading1 : LProjectDetailsHeading1)}>{heading1}&nbsp;</Heading>
-          <Heading {...(theme ? ProjectDetailsHeading2 : LProjectDetailsHeading2)}>{heading2}</Heading>
+          {heading2 ? <Heading {...(theme ? ProjectDetailsHeading2 : LProjectDetailsHeading2)}>{heading2}</Heading> : null}
         </Flex>
         <Text {...(theme ? ProjectDetailsTextSummary : LProjectDetailsTextSummary)}>{summary}</Text>
         <Flex wrap={"wrap"} {...ProjectDetailsTextStackFlex}>

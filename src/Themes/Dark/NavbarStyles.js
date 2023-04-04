@@ -21,7 +21,7 @@ export const NavbarLaptopBar = {
   bgColor: Black,
   color: White,
   gap: "2",
-  p: "1",
+  py: "1",
 };
 export const NavbarLaptopLogoStyle = {
   transition: "500ms",
@@ -65,6 +65,7 @@ export const NavbarButtonInsideBoxMobile = {
 export const NavbarThemeButtonConfig = {
   transition: "500ms",
   borderRadius: "50%",
+  zIndex: "2",
   size: "md",
   mx: { base: "3", sm: "2", md: "3", lg: "5", xl: "10" },
   color: Black,
@@ -75,10 +76,9 @@ export const NavbarThemeButtonConfig = {
 
 export const NavbarThemeMainFlex = {
   transition: "500ms",
-  w: "100%",
   pos: "sticky",
   top: "80%",
-  right:"85%",
-  zIndex: "2",
+  left: "85%",
   justifyContent: "flex-end",
+  zIndex:"2"
 };

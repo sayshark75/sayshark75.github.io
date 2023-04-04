@@ -1,9 +1,9 @@
-import { Black, Blue, BluePlus, DarkBlue, ExtraDarkBlue, White } from "../ColorPallet";
+import { Black, Blue, BluePlus, DarkBlue, ExtraDarkBlue, leafGreen, White } from "../ColorPallet";
 
 export const LProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
-  boxShadow: "2xl",
+  _hover:{boxShadow:'2xl'},
   bgColor: White,
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
@@ -41,13 +41,13 @@ export const LProjectDetailsHeading1 = {
   transition: "500ms",
   color: ExtraDarkBlue,
   fontSize: "lg",
-  my: "4",
+  my: "2",
 };
 export const LProjectDetailsHeading2 = {
   transition: "500ms",
   fontSize: "lg",
   color: BluePlus,
-  my: "4",
+  my: "2",
 };
 export const LProjectDetailsTextSummary = {
   transition: "500ms",
@@ -72,7 +72,8 @@ export const LProjectDetailsIconButtonTop = {
   fontSize: "16px",
   width: "7rem",
   _hover: { bgColor: Black, color: White },
-  bgColor: White,
+  bgColor: leafGreen,
+  color: White,
 };
 export const LProjectDetailsIconButton = {
   transition: "500ms",
@@ -109,10 +110,10 @@ export const LMainProjectHeading2 = {
 };
 export const LCalColorText = {
   color: DarkBlue,
-  p:"4",
-  borderRadius:"8",
-  _hover:{boxShadow: "2xl"},
-  transition:"700ms"
+  p: "4",
+  borderRadius: "8",
+  _hover: { boxShadow: "2xl" },
+  transition: "700ms",
 };
 export const LCalStyleProps = {
   fontSize: 16,

@@ -5,6 +5,7 @@ const Blue = "blue.500";
 const LightestBlue = "blue.50";
 const LightBluePlus = "blue.100";
 const BluePlus = "blue.600";
+const leafGreen = "#0CB919"
 
 // Common In Both
 const White = "white";
@@ -23,4 +24,4 @@ const grayBorder = "gray";
 
 
 
-export { DarkBlue, Blue, LightestBlue, BluePlus, White,WhiteTrans0, WhiteTrans1, WhiteTrans3, WhiteTrans2, Black, BlackTrans1, BlackTrans2,BlackTrans3,grayBorder,LightBluePlus,ExtraDarkBlue };
+export { DarkBlue, Blue, LightestBlue, BluePlus, White,WhiteTrans0, WhiteTrans1, WhiteTrans3, WhiteTrans2, Black, BlackTrans1, BlackTrans2,BlackTrans3,grayBorder,LightBluePlus,ExtraDarkBlue,leafGreen };

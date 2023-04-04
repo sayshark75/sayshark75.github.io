@@ -60,8 +60,8 @@ export const ProjectsData = [
     github: indianExpressGithub,
     imgDark: project3Dark,
     imgLight: project3Light,
-    heading1: "Indian",
-    heading2: "Express.com",
+    heading1: "IndianExpress.com",
+    heading2: "",
     summary:
       "It is an Online and Offline News Platform, The Indian Express grew into a multiple-edition paper influencing thought and policy across the country. Packed with a fair mix of news, knowledge and information.",
     TStack: [false, false, true, true, true, false, false, false],

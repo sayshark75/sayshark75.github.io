@@ -7,7 +7,7 @@ export const ProjectHeadFlex = {
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
-  boxShadow:'2xl',
+  _hover:{boxShadow:'2xl'},
   p: "5",
   justifyContent: "center",
   alignItems: "center",
@@ -41,13 +41,13 @@ export const ProjectDetailsHeading1 = {
   transition: "500ms",
   color: White,
   fontSize: "lg",
-  my: "4",
+  my: "2",
 };
 export const ProjectDetailsHeading2 = {
   transition: "500ms",
   fontSize: "lg",
   color: WhiteTrans2,
-  my: "4",
+  my: "2",
 };
 export const ProjectDetailsTextSummary = {
   transition: "500ms",
@@ -97,7 +97,8 @@ export const GithubCard1 = {
 
 export const MainProjectHeadFlex = {
   transition: "500ms",
-  p: "8",
+  py: "8",
+  mx:"12",
   justifyContent: "center",
   alignItems: "center",
   direction: "column",
@@ -118,7 +119,7 @@ export const MainProjectHeading2 = {
 };
 export const CalColorText = {
   color: White,
-  p:"4",
+  py:"4",
   borderRadius:"8",
   _hover:{boxShadow: "dark-lg"},
   transition:"700ms"
