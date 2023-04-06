@@ -4,16 +4,14 @@ import App from "./App";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import ScrollContextProvider from "./Contexts/ScrollContext";
-import MyThemeContextProvider from "./Contexts/themeContext";
+import { theme } from "./Themes/myTheme.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ChakraProvider>
+  <ChakraProvider theme={theme}>
     <BrowserRouter>
       <ScrollContextProvider>
-        <MyThemeContextProvider>
-          <App />
-        </MyThemeContextProvider>
+        <App />
       </ScrollContextProvider>
     </BrowserRouter>
   </ChakraProvider>

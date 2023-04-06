@@ -9,15 +9,12 @@ import { FadeIn } from "react-slide-fade-in";
 import { fadeInConfigLeft } from "./Animations/Animations";
 import TechnicalSkills from "./Components/TechnicalSkills";
 import Contact from "./Components/Contact";
-import { AppMainFlex } from "./Themes/Dark/AppPageStyles";
-import { useContext } from "react";
-import { MyThemeContext } from "./Contexts/themeContext";
-import { LAppMainFlex } from "./Themes/Light/AppPageStyles";
+import { AppMainFlex } from "./Themes/Styles/AppPageStyles";
 
 function App() {
-  const { theme } = useContext(MyThemeContext);
+
   return (
-    <Flex fontFamily={"kanit"} direction={"column"} alignItems={"center"} sx={theme?{...AppMainFlex}:{...LAppMainFlex}}>
+    <Flex {...AppMainFlex}>
       <Navbar />
       <FadeIn {...fadeInConfigLeft} durationInMilliseconds={1000} delayInMilliseconds={500}>
         <Home />

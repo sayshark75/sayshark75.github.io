@@ -3,24 +3,18 @@ import React from "react";
 import { FadeIn } from "react-slide-fade-in";
 import { fadeInConfigBottom } from "../Animations/Animations";
 import { githubLink, linkedInLink, locationLink, mailLink, phoneLink, twitterLink } from "../Sources/Links";
-import { toolTipStyle } from "../Themes/Dark/Miscellaneous";
+import { toolTipStyle } from "../Themes/Styles/Miscellaneous";
 
 import { VscGithub } from "react-icons/vsc";
 import { MdAlternateEmail, MdCall, MdMyLocation, MdOutlineContentCopy } from "react-icons/md";
 import { BsLinkedin, BsTwitter } from "react-icons/bs";
 import { ScrollContext } from "../Contexts/ScrollContext";
 import { useContext } from "react";
-import { ContactButtons, ContactFlexMain, ContactHeading1, ContactHeading2 } from "../Themes/Dark/ContactPageStyles";
+import { ContactButtons, ContactFlexMain, ContactHeading1, ContactHeading2 } from "../Themes/Styles/ContactPageStyles";
 import copy from "copy-to-clipboard";
-import { MyThemeContext } from "../Contexts/themeContext";
-import { LContactButtons, LContactHeading1, LContactHeading2 } from "../Themes/Light/ContactPageStyles";
-import { LtoolTipStyle } from "../Themes/Light/Miscellaneous";
-import { aboutButtonsTop, AboutContactCopy } from "../Themes/Dark/AboutPageStyles";
-import { LaboutButtonsTop, LAboutContactCopy } from "../Themes/Light/AboutPageStyles";
+import { aboutButtonsTop, AboutContactCopy } from "../Themes/Styles/AboutPageStyles";
 
 const Contact = () => {
-  const { theme } = useContext(MyThemeContext);
-
   const { ContactRef } = useContext(ScrollContext);
 
   const copyPhoneFun = () => {
@@ -33,27 +27,27 @@ const Contact = () => {
   return (
     <Flex ref={ContactRef} {...ContactFlexMain}>
       <Flex>
-        <Heading {...(theme ? ContactHeading1 : LContactHeading1)}>Get In&nbsp;</Heading>
-        <Heading {...(theme ? ContactHeading2 : LContactHeading2)}>Touch</Heading>
+        <Heading {...ContactHeading1}>Get In&nbsp;</Heading>
+        <Heading {...ContactHeading2}>Touch</Heading>
       </Flex>
 
-      <Flex direction={{base:"column",md:"row"}}>
+      <Flex direction={{ base: "column", md: "row" }}>
         <Flex pt={2} justifyContent={"flex-start"}>
-          <Button onClick={copyPhoneFun} {...(theme ? aboutButtonsTop : LaboutButtonsTop)} mr={1}>
+          <Button onClick={copyPhoneFun} {...aboutButtonsTop} mr={1}>
             <MdOutlineContentCopy style={{ fontSize: "16px" }} />
             Copy
           </Button>
-          <Text {...(theme ? AboutContactCopy : LAboutContactCopy)} ml={1}>
+          <Text {...AboutContactCopy} ml={1}>
             +91 7588244148
           </Text>
         </Flex>
 
         <Flex pt={2} justifyContent={"flex-start"}>
-          <Button onClick={copyMailFun} {...(theme ? aboutButtonsTop : LaboutButtonsTop)} mr={1}>
+          <Button onClick={copyMailFun} {...aboutButtonsTop} mr={1}>
             <MdOutlineContentCopy style={{ fontSize: "16px" }} />
             Copy
           </Button>
-          <Text fontSize={"sm"} {...(theme ? AboutContactCopy : LAboutContactCopy)} ml={1}>
+          <Text fontSize={"sm"} {...AboutContactCopy} ml={1}>
             sayyedsharuk75@gmail.com
           </Text>
         </Flex>
@@ -61,44 +55,44 @@ const Contact = () => {
       <Flex>
         <Flex my={"8"} mx={"2"} gap={"3"}>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={400}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Github"}>
+            <Tooltip {...toolTipStyle} label={"Github"}>
               <a href={githubLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? ContactButtons : LContactButtons)} icon={<VscGithub />} />
+                <IconButton {...ContactButtons} icon={<VscGithub />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={500}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Compose a Email"}>
+            <Tooltip {...toolTipStyle} label={"Compose a Email"}>
               <a href={mailLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? ContactButtons : LContactButtons)} icon={<MdAlternateEmail />} />
+                <IconButton {...ContactButtons} icon={<MdAlternateEmail />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={600}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Call Now"}>
+            <Tooltip {...toolTipStyle} label={"Call Now"}>
               <a href={phoneLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? ContactButtons : LContactButtons)} icon={<MdCall />} />
+                <IconButton {...ContactButtons} icon={<MdCall />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={700}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"LinkedIn"}>
+            <Tooltip {...toolTipStyle} label={"LinkedIn"}>
               <a href={linkedInLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? ContactButtons : LContactButtons)} icon={<BsLinkedin />} />
+                <IconButton {...ContactButtons} icon={<BsLinkedin />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={900}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Twitter"}>
+            <Tooltip {...toolTipStyle} label={"Twitter"}>
               <a href={twitterLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? ContactButtons : LContactButtons)} icon={<BsTwitter />} />
+                <IconButton {...ContactButtons} icon={<BsTwitter />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={1000}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Location"}>
+            <Tooltip {...toolTipStyle} label={"Location"}>
               <a href={locationLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? ContactButtons : LContactButtons)} icon={<MdMyLocation />} />
+                <IconButton {...ContactButtons} icon={<MdMyLocation />} />
               </a>
             </Tooltip>
           </FadeIn>

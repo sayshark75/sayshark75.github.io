@@ -1,18 +1,17 @@
-import { White, Black } from "../ColorPallet";
 
 export const FooterTopBox = {
   transition: "500ms",
-  bgColor: Black,
+  bgColor: "Black_White",
   justifyContent: "center",
   alignItems: "center",
   w: "100%",
-  my: "1",
-  pb: { base: "80px", md: "1" },
+  pb: { base: "80px", md: "0" },
 };
 
 export const FooterTextStyle = {
   transition: "500ms",
-  color: White,
+  color: "White_Black",
+  mt:"2",
   as: "b",
   fontSize: "lg",
 };
@@ -20,5 +19,6 @@ export const FooterTextStyle = {
 export const FooterHeartIcon = {
   transition: "500ms",
   mx: "1",
-  color: "red",
+  mt:"2",
+  color: "LeafGreen_HeartRed",
 };

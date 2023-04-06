@@ -1,9 +1,8 @@
-import { Button, Text, Flex, Show, IconButton } from "@chakra-ui/react";
-import React, { useContext } from "react";
+import { Button, Text, Flex, Show, IconButton, useColorMode } from "@chakra-ui/react";
+import React, { useContext} from "react";
 import { BsStars } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 import { MdInfo, MdDevices, MdContactPage, MdContacts, MdDarkMode, MdWbSunny } from "react-icons/md";
-import { MyThemeContext } from "../Contexts/themeContext";
 
 import {
   NavabrButtonStyleLaptop,
@@ -14,21 +13,14 @@ import {
   NavbarLaptopLogoStyle,
   NavbarThemeButtonConfig,
   NavbarThemeMainFlex,
-} from "../Themes/Dark/NavbarStyles";
-import {
-  LNavabrButtonStyleLaptop,
-  LNavbarLaptopBar,
-  LNavbarMobileBar,
-  LNavbarButtonInsideBoxMobile,
-  LNavbarButtonStyleMobile,
-  LNavbarLaptopLogoStyle,
-  LNavbarThemeButtonConfig,
-} from "../Themes/Light/NavbarStyles";
+} from "../Themes/Styles/NavbarStyles";
 import { resumeDownload, resumelink } from "../Sources/Links.js";
 import { ScrollContext } from "../Contexts/ScrollContext";
 
 const Navbar = () => {
-  const { theme, setTheme } = useContext(MyThemeContext);
+
+  const { colorMode, toggleColorMode } = useColorMode()
+
   const { handleHomeRef, handleAboutRef, handleSkillsRef, handleProjectsRef, handleContactRef } = useContext(ScrollContext);
 
   const handleClick = () => {
@@ -38,35 +30,35 @@ const Navbar = () => {
   return (
     <>
       <Show above="md">
-        <Flex {...(theme ? NavbarLaptopBar : LNavbarLaptopBar)}>
+        <Flex {...NavbarLaptopBar}>
           <Show above="lg">
             <Flex alignItems={"center"} flex={1}>
-              <Text {...(theme ? NavbarLaptopLogoStyle : LNavbarLaptopLogoStyle)}>Sayyed Sharuk</Text>
+              <Text {...NavbarLaptopLogoStyle}>Sayyed Sharuk</Text>
             </Flex>
           </Show>
           <Flex justifyContent={"flex-end"} flex={1}>
-            <Button onClick={handleHomeRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+            <Button onClick={handleHomeRef} {...NavabrButtonStyleLaptop}>
               <FaHome /> Home
             </Button>
 
-            <Button onClick={handleAboutRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+            <Button onClick={handleAboutRef} {...NavabrButtonStyleLaptop}>
               <MdInfo /> About
             </Button>
 
-            <Button onClick={handleProjectsRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+            <Button onClick={handleProjectsRef} {...NavabrButtonStyleLaptop}>
               <MdDevices /> Projects
             </Button>
 
-            <Button onClick={handleSkillsRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+            <Button onClick={handleSkillsRef} {...NavabrButtonStyleLaptop}>
               <BsStars /> Skills
             </Button>
 
-            <Button onClick={handleContactRef} {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+            <Button onClick={handleContactRef} {...NavabrButtonStyleLaptop}>
               <MdContacts /> Contact
             </Button>
 
             <a href={resumeDownload} onClick={handleClick}>
-              <Button {...(theme ? NavabrButtonStyleLaptop : LNavabrButtonStyleLaptop)}>
+              <Button {...NavabrButtonStyleLaptop}>
                 <MdContactPage /> Resume
               </Button>
             </a>
@@ -75,48 +67,44 @@ const Navbar = () => {
       </Show>
       {/* Theme Preferences */}
       <Flex {...NavbarThemeMainFlex}>
-        {theme ? (
-          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} transition={"700ms"} icon={<MdDarkMode />} />
-        ) : (
-          <IconButton onClick={() => setTheme(!theme)} {...(theme ? NavbarThemeButtonConfig : LNavbarThemeButtonConfig)} transition={"700ms"} icon={<MdWbSunny />} />
-        )}
+        <IconButton onClick={toggleColorMode} {...NavbarThemeButtonConfig} transition={"700ms"} icon={colorMode === "light" ? <MdDarkMode /> : <MdWbSunny />} />
       </Flex>
 
       {/* Mobile Navbar */}
-      <Show breakpoint='(max-width: 767px)'>
-        <Flex {...(theme ? NavbarMobileBar : LNavbarMobileBar)}>
-          <Button onClick={handleHomeRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
-            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
-              <FaHome style={{ fontSize: "22px" }} /> Home
+      <Show breakpoint="(max-width: 767px)">
+        <Flex {...NavbarMobileBar}>
+          <Button onClick={handleHomeRef} {...NavbarButtonStyleMobile}>
+            <Flex {...NavbarButtonInsideBoxMobile}>
+              <FaHome /> Home
             </Flex>
           </Button>
-          <Button onClick={handleAboutRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
-            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
-              <MdInfo style={{ fontSize: "22px" }} />
+          <Button onClick={handleAboutRef} {...NavbarButtonStyleMobile}>
+            <Flex {...NavbarButtonInsideBoxMobile}>
+              <MdInfo />
               About Me
             </Flex>
           </Button>
-          <Button onClick={handleProjectsRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
-            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
-              <MdDevices style={{ fontSize: "22px" }} />
+          <Button onClick={handleProjectsRef} {...NavbarButtonStyleMobile}>
+            <Flex {...NavbarButtonInsideBoxMobile}>
+              <MdDevices />
               Projects
             </Flex>
           </Button>
-          <Button onClick={handleSkillsRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
-            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
-              <BsStars style={{ fontSize: "22px" }} />
+          <Button onClick={handleSkillsRef} {...NavbarButtonStyleMobile}>
+            <Flex {...NavbarButtonInsideBoxMobile}>
+              <BsStars />
               Skills
             </Flex>
           </Button>
-          <Button onClick={handleContactRef} {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
-            <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
-              <MdContacts style={{ fontSize: "22px" }} /> Contact
+          <Button onClick={handleContactRef} {...NavbarButtonStyleMobile}>
+            <Flex {...NavbarButtonInsideBoxMobile}>
+              <MdContacts /> Contact
             </Flex>
           </Button>
-          <Button {...(theme ? NavbarButtonStyleMobile : LNavbarButtonStyleMobile)}>
+          <Button {...NavbarButtonStyleMobile}>
             <a href={resumeDownload} onClick={handleClick}>
-              <Flex {...(theme ? NavbarButtonInsideBoxMobile : LNavbarButtonInsideBoxMobile)}>
-                <MdContactPage style={{ fontSize: "22px" }} />
+              <Flex {...NavbarButtonInsideBoxMobile}>
+                <MdContactPage />
                 Resume
               </Flex>
             </a>

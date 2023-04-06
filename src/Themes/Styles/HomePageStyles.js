@@ -1,4 +1,3 @@
-import { White, WhiteTrans2, Black } from "../ColorPallet";
 
 export const homeParentFlex = {
   mt: { base: "30px", md: "80px" },
@@ -13,25 +12,25 @@ export const homeButtonsTop = {
   borderRadius: "3",
   size: "sm",
   m: { base: "1px", sm: "2", md: "3", lg: "5", xl: "6" },
-  color: Black,
-  bgColor: White,
+  color: "White_Black",
+  bgColor: "DarkBlue_White",
   transition: "700ms",
-  _hover: { bgColor: Black, color: White },
-  _active: { backgroundColor: White, color: Black },
+  _hover: { bgColor: "White_Black", color: "Blue_White" },
+  _active: { backgroundColor: "Blue_White", color: "White_Black" },
   fontSize: "20px",
 };
 
 export const heading1 = {
-  // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
+  
   transition: "500ms",
   fontSize: { base: "34px", sm: "40px", md: "64px", lg: "86", xl: "108px" },
-  color: WhiteTrans2,
+  color: "DarkBlue_WTrans2",
 };
 export const heading2 = {
-  // size: { base: "xl", sm: "2xl", md: "3xl", lg: "4xl" },
+  
   transition: "500ms",
   fontSize: { base: "34px", sm: "40px", md: "64px", lg: "86", xl: "108px" },
-  color: White,
+  color: "Blue_White",
 };
 export const aboutFlex = {
   m: "auto",
@@ -43,6 +42,6 @@ export const aboutText = {
   as: "b",
   p: "8",
   transition: "500ms",
-  color: WhiteTrans2,
+  color: "DarkBlue_WTrans2",
   textAlign: "justify",
 };

@@ -1,7 +1,7 @@
 import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { BsFillHeartFill } from "react-icons/bs";
-import { FooterHeartIcon, FooterTextStyle, FooterTopBox } from "../Themes/Dark/FooterPageStyles";
+import { FooterHeartIcon, FooterTextStyle, FooterTopBox } from "../Themes/Styles/FooterPageStyles";
 
 const Footer = () => {
   return (

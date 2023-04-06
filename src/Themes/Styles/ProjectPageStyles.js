@@ -1,9 +1,9 @@
-import { White, WhiteTrans2, Black, WhiteTrans0 } from "../ColorPallet";
+import { GCLLevel1, GCLLevel2, GCLLevel3, GCLLevel4, GCLBase, GCDLevel1, GCDLevel2, GCDLevel3, GCDLevel4, GCDBase, GCLBg, GCLTitle, GCLText, GCLRing, GCDBg, GCDTitle, GCDText, GCDRing } from "../ColorPallet";
 
 export const ProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
-  bgColor: WhiteTrans0,
+  bgColor: "White_WTrans0",
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
@@ -39,21 +39,21 @@ export const ProjectDetailsFlexHeading = {
 };
 export const ProjectDetailsHeading1 = {
   transition: "500ms",
-  color: White,
+  color: "EDBlue_White",
   fontSize: "lg",
   my: "2",
 };
 export const ProjectDetailsHeading2 = {
   transition: "500ms",
   fontSize: "lg",
-  color: WhiteTrans2,
+  color: "BluePlus_WTrans2",
   my: "2",
 };
 export const ProjectDetailsTextSummary = {
   transition: "500ms",
   as: "b",
   textAlign: "justify",
-  color: White,
+  color: "EDBlue_White",
 };
 export const ProjectDetailsTextStackFlex = {
   transition: "500ms",
@@ -63,35 +63,53 @@ export const ProjectDetailsTextStackFlex = {
 };
 export const ProjectDetailsToolTip = {
   transition: "500ms",
-  bgColor: White,
-  color: Black,
+  bgColor: "DarkBlue_White",
+  color: "White_Black",
 };
 export const ProjectDetailsIconButtonTop = {
   transition: "500ms",
   fontSize: "16px",
   width: "7rem",
-  _hover: { bgColor: Black, color: White },
-  bgColor: White,
+  _hover: { bgColor: "White_Black", color: "Black_White" },
+  bgColor: "LGHex_LBHex",
+  border:"2px solid",
+  borderColor:"LGHex_LBHex"
+
 };
 export const ProjectDetailsIconButton = {
   transition: "500ms",
   fontSize: "30px",
-  _hover: { bgColor: Black },
-  bgColor: White,
+  _hover: { bgColor: "Black_Black",color:"White_White" },
+  bgColor: "White_White",
 };
 
-export const GithubCalenderTheme = {
-  level4: "#167CFF",
-  level3: "#1C68CA",
-  level2: "#103769",
-  level1: "#1C2E45",
-  level0: "#202020",
+export const GCLTheme = {
+  level4: GCLLevel1,
+  level3: GCLLevel2,
+  level2: GCLLevel3,
+  level1: GCLLevel4,
+  level0: GCLBase,
 };
-export const GithubCard1 = {
-  bgColor: "272727ff",
-  titleColor: "3C80FFff",
-  textColor: "76A6FFff",
-  ringColor: "10FF14ff",
+export const GCDTheme = {
+  level4: GCDLevel1,
+  level3: GCDLevel2,
+  level2: GCDLevel3,
+  level1: GCDLevel4,
+  level0: GCDBase,
+};
+
+export const GCardL = {
+  bgColor: GCLBg,
+  titleColor: GCLTitle,
+  textColor: GCLText,
+  ringColor: GCLRing,
+  customTitle: "My Statistics",
+};
+export const GCardD = {
+  bgColor: GCDBg,
+  titleColor: GCDTitle,
+  textColor: GCDText,
+  ringColor: GCDRing,
   customTitle: "My Statistics",
 };
 
@@ -109,17 +127,17 @@ export const MainProjectHeadlineFlex = {
 };
 export const MainProjectHeading1 = {
   transition: "500ms",
-  color: WhiteTrans2,
+  color: "DarkBlue_WTrans2",
   my: "4",
 };
 export const MainProjectHeading2 = {
   transition: "500ms",
-  color: White,
+  color: "Blue_White",
   my: "4",
 };
 export const CalColorText = {
-  color: White,
-  py:"4",
+  color: "DarkBlue_White",
+  p:"6",
   borderRadius:"8",
   _hover:{boxShadow: "dark-lg"},
   transition:"700ms"

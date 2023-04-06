@@ -1,32 +1,42 @@
-import { White, WhiteTrans3, WhiteTrans2, Black } from "../ColorPallet";
 
 export const aboutButtonsTop = {
   borderRadius: "3",
   size: "xs",
   ml: "8",
   mr: "2",
-  color: Black,
-  bgColor: White,
+  color: "White_Black",
+  bgColor: "DarkBlue_White",
   transition: "500ms",
-  _hover: { bgColor: "#0086FC", color: White },
-  _active: { backgroundColor: "#35FC00", color: Black },
+  _hover: { bgColor: "#0086FC", color: "DarkBlue_White" },
+  _active: { backgroundColor: "#35FC00", color: "White_Black" },
+};
+export const AboutResumeButton = {
+  ml: "8",
+  my: "4",
+  bgColor: "LGHex_LBHex",
+  color: "Black_White",
+  boxShadow: "2xl",
+  _hover: { bgColor: "White_Gray", color: "DarkBlue_White" },
+  p: "6",
+  fontSize: "xl",
 };
 
 export const AboutHeadFlex = {
   transition: "500ms",
   direction: "column",
   w: "100%",
+  pt:"12",
   justifyContent: "center",
   alignItems: "center",
 };
 export const AboutHeadings = {
   transition: "500ms",
-  color: WhiteTrans2,
+  color: "DarkBlue_WTrans2",
   my: "4",
 };
 export const AboutHeadings2 = {
   transition: "500ms",
-  color: White,
+  color: "Blue_White",
   my: "4",
 };
 export const AboutAfterHeading = {
@@ -45,29 +55,30 @@ export const AboutAfterHeadingMain = {
 };
 export const AboutProfilePicture = {
   transition: "500ms",
-  border: `8px solid ${White}`,
+  border: `8px solid`,
+  borderColor: "SuiteBlue_White",
   w: { base: "250px", sm: "300px", md: "500px" },
 };
 export const AboutSummaryText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  textAlign:"justify",
-  color: WhiteTrans3,
+  textAlign: "justify",
+  color: "DarkBlue_WTrans3",
   mx: "8",
 };
 export const AboutContactCopy = {
   transition: "500ms",
   as: "b",
   fontSize: "sm",
-  color: WhiteTrans3,
+  color: "DarkBlue_WTrans3",
   mx: "8",
 };
 export const AboutSummaryInterest = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  color: WhiteTrans3,
+  color: "DarkBlue_WTrans3",
   py: "4",
   mx: "8",
 };
@@ -75,5 +86,5 @@ export const AboutIconText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  color: WhiteTrans3,
+  color: "DarkBlue_WTrans3",
 };

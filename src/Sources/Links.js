@@ -37,3 +37,8 @@ export const APrimeGithub = "https://github.com/sayshark75/A-Prime";
 export const GadgetRamboGithub = "https://github.com/Atanu8250/GadgetRambo";
 
 export const GadgetRamboLive = "https://gadget-rambo.netlify.app/";
+
+export const KoovsGithub = "https://github.com/sukanta255/ordinary-summer-5089";
+
+export const KoovsLive = "https://frontend-mohit-6164.vercel.app/";
+

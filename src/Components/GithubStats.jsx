@@ -1,36 +1,37 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
-import React, { useContext } from "react";
+import { Flex, Image, Text, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import React from "react";
 import GitHubCalendar from "react-github-calendar";
-import { MyThemeContext } from "../Contexts/themeContext";
-import { CalColorText, CalStyleProps, GithubCalenderTheme, GithubCard1 } from "../Themes/Dark/ProjectPageStyles";
-import { LCalColorText, LGithubCalenderTheme, LGithubCard1 } from "../Themes/Light/ProjectPageStyles";
+import { CalColorText, CalStyleProps, GCDTheme, GCLTheme, GCardD, GCardL } from "../Themes/Styles/ProjectPageStyles";
 
 const GithubStats = () => {
-  const { theme } = useContext(MyThemeContext);
-  const GC1T = theme ? GithubCard1 : LGithubCard1;
+  const { colorMode } = useColorMode();
+  const GCT = useColorModeValue(GCardL,GCardD)
   return (
     <>
-      <Flex {...(theme ? CalColorText : LCalColorText)}>
-        <GitHubCalendar {...CalStyleProps} theme={theme ? GithubCalenderTheme : LGithubCalenderTheme} username="sayshark75" />
+      <Flex {...CalColorText}>
+        <GitHubCalendar {...CalStyleProps} theme={colorMode === "light" ? GCDTheme : GCLTheme} username="sayshark75" />
       </Flex>
       <Text align={"center"}>
         <Flex w={{ base: "280px", sm: "320px", md: "440px", lg: "560px" }} gap={5} mt={6} direction={"column"} justifyContent={"center"}>
           <Image
-            _hover={{ boxShadow: "2xl" }} transition={"750ms"}
+            _hover={{ boxShadow: "2xl" }}
+            transition={"750ms"}
             borderRadius={"12"}
-            src={`https://github-readme-stats-git-master-sayshark75.vercel.app/api?username=sayshark75&show_icons=true&locale=en&title_color=${GC1T.titleColor}&text_color=${GC1T.textColor}&icon_color=${GC1T.titleColor}&bg_color=${GC1T.bgColor}&custom_title=My Statistics&ring_color=${GC1T.ringColor}&border_color=${GC1T.bgColor}`}
+            src={`https://github-readme-stats-git-master-sayshark75.vercel.app/api?username=sayshark75&show_icons=true&locale=en&title_color=${GCT.titleColor}&text_color=${GCT.textColor}&icon_color=${GCT.titleColor}&bg_color=${GCT.bgColor}&custom_title=My Statistics&ring_color=${GCT.ringColor}&border_color=${GCT.bgColor}`}
             alt={"Github Card"}
           />
           <Image
-            _hover={{ boxShadow: "2xl" }} transition={"750ms"}
+            _hover={{ boxShadow: "2xl" }}
+            transition={"750ms"}
             borderRadius={"12"}
-            src={`https://github-readme-stats-git-master-sayshark75.vercel.app/api/top-langs?username=sayshark75&show_icons=true&locale=en&layout=compact&bg_color=${GC1T.bgColor}&title_color=${GC1T.textColor}&text_color=${GC1T.titleColor}&border_color=${GC1T.bgColor}`}
+            src={`https://github-readme-stats-git-master-sayshark75.vercel.app/api/top-langs?username=sayshark75&show_icons=true&locale=en&layout=compact&bg_color=${GCT.bgColor}&title_color=${GCT.textColor}&text_color=${GCT.titleColor}&border_color=${GCT.bgColor}`}
             alt={"Github Language"}
           />
           <Image
-            _hover={{ boxShadow: "2xl" }} transition={"750ms"}
+            _hover={{ boxShadow: "2xl" }}
+            transition={"750ms"}
             borderRadius={"12"}
-            src={`https://streak-stats.demolab.com?user=sayshark75&hide_border=true&background=${GC1T.bgColor}&ring=${GC1T.ringColor}&fire=${GC1T.titleColor}&currStreakLabel=${GC1T.textColor}&currStreakNum=${GC1T.titleColor}&sideNums=${GC1T.textColor}&dates=${GC1T.titleColor}&stroke=${GC1T.ringColor}&sideLabels=${GC1T.titleColor}`}
+            src={`https://streak-stats.demolab.com?user=sayshark75&hide_border=true&background=${GCT.bgColor}&ring=${GCT.ringColor}&fire=${GCT.titleColor}&currStreakLabel=${GCT.textColor}&currStreakNum=${GCT.titleColor}&sideNums=${GCT.textColor}&dates=${GCT.titleColor}&stroke=${GCT.ringColor}&sideLabels=${GCT.titleColor}`}
           />
         </Flex>
       </Text>

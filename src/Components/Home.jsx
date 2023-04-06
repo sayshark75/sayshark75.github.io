@@ -1,76 +1,73 @@
-import { Flex, Heading, Image, Text, Tooltip, IconButton } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text, Tooltip, IconButton, useColorMode } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { VscGithub } from "react-icons/vsc";
 import { MdAlternateEmail, MdCall, MdMyLocation } from "react-icons/md";
 import { BsLinkedin, BsTwitter } from "react-icons/bs";
-import { aboutFlex, aboutText, heading1, heading2, homeButtonsTop, homeParentFlex } from "../Themes/Dark/HomePageStyles";
-import { toolTipStyle } from "../Themes/Dark/Miscellaneous";
+import { aboutFlex, aboutText, heading1, heading2, homeButtonsTop, homeParentFlex } from "../Themes/Styles/HomePageStyles";
+import { toolTipStyle } from "../Themes/Styles/Miscellaneous";
 import { githubLink, linkedInLink, locationLink, mailLink, phoneLink, twitterLink } from "../Sources/Links";
 import { ScrollContext } from "../Contexts/ScrollContext";
 import { typeImageBase, typeImageBaseLite } from "../Sources/Images";
 import { FadeIn } from "react-slide-fade-in";
 import { fadeInConfigBottom } from "../Animations/Animations";
-import { Lheading1, Lheading2, LaboutText, LhomeButtonsTop } from "../Themes/Light/HomePageStyles";
-import { MyThemeContext } from "../Contexts/themeContext";
-import { LtoolTipStyle } from "../Themes/Light/Miscellaneous";
 
 const Home = () => {
   const { HomeRef } = useContext(ScrollContext);
-  const { theme } = useContext(MyThemeContext);
-  
+  const { colorMode } = useColorMode();
   return (
     <>
       <Flex ref={HomeRef} {...homeParentFlex}>
-        <Flex direction={{base:"column",sm:"row"}}>
-          <Heading {...(theme ? heading1 : Lheading1)}>Hi, I'm&nbsp;</Heading>
-          <Heading {...(theme ? heading2 : Lheading2)}>Sayyed Sharuk</Heading>
+        <Flex direction={{ base: "column", sm: "row" }}>
+          <Heading {...heading1}>Hi, I'm&nbsp;</Heading>
+          <Heading {...heading2}>Sayyed Sharuk</Heading>
         </Flex>
-        <Image mt={"8"} src={theme ? typeImageBase : typeImageBaseLite} alt="Typing SVG" />
+        <Image mt={"8"} src={colorMode === "dark" ? typeImageBase : typeImageBaseLite} alt="Typing SVG" />
         <Flex {...aboutFlex}>
-          <Text {...(theme ? aboutText : LaboutText)}>
-           A Full Stack Developer who enjoys solving problems and building quality projects. With a diverse set of skills and technologies, Can develop robust and efficient products. Keep up with the latest advancements in the field, and work well with teams to deliver the best possible results.
+          <Text {...aboutText}>
+            A Full Stack Developer who enjoys solving problems and building quality projects. With a diverse set of skills and technologies, Can develop robust and efficient
+            products. Keep up with the latest advancements in the field, and work well with teams to deliver the best possible results.
           </Text>
         </Flex>
         <Flex m={"8"} gap={"3"}>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={400}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Github"}>
+            <Tooltip {...toolTipStyle} label={"Github"}>
               <a href={githubLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<VscGithub />} />
+                <IconButton {...homeButtonsTop} icon={<VscGithub />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={500}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Email"}>
+            <Tooltip {...toolTipStyle} label={"Email"}>
               <a href={mailLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<MdAlternateEmail />} />
+                <IconButton {...homeButtonsTop} icon={<MdAlternateEmail />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={600}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Phone"}>
+            <Tooltip {...toolTipStyle} label={"Phone"}>
               <a href={phoneLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<MdCall />} />
+                <IconButton {...homeButtonsTop} icon={<MdCall />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={700}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"LinkedIn"}>
+            <Tooltip {...toolTipStyle} label={"LinkedIn"}>
               <a href={linkedInLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<BsLinkedin />} />
+                <IconButton {...homeButtonsTop} icon={<BsLinkedin />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={900}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Twitter"}>
+            <Tooltip {...toolTipStyle} label={"Twitter"}>
               <a href={twitterLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<BsTwitter />} />
+                <IconButton {...homeButtonsTop} icon={<BsTwitter />} />
               </a>
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={1000}>
-            <Tooltip {...(theme ? toolTipStyle : LtoolTipStyle)} label={"Location"}>
+            <Tooltip {...toolTipStyle} label={"Location"}>
               <a href={locationLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...(theme ? homeButtonsTop : LhomeButtonsTop)} icon={<MdMyLocation />} />
+                <IconButton {...homeButtonsTop} icon={<MdMyLocation />} />
               </a>
             </Tooltip>
           </FadeIn>

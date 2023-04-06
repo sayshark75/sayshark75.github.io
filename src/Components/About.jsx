@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Button, Flex, Heading, IconButton, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Heading, IconButton, Image, Text, useColorMode } from "@chakra-ui/react";
 
 import { MdOfflineBolt, MdSportsEsports, MdGrass } from "react-icons/md";
 import { BsFillPlayCircleFill } from "react-icons/bs";
@@ -14,17 +14,16 @@ import {
   AboutHeadings2,
   AboutIconText,
   AboutProfilePicture,
+  AboutResumeButton,
   AboutSummaryInterest,
   AboutSummaryText,
-} from "../Themes/Dark/AboutPageStyles";
+} from "../Themes/Styles/AboutPageStyles";
 import { ProfilePicBlue, ProfilePicBW } from "../Sources/Images";
-import { LaboutButtonsTop, LAboutHeadings, LAboutHeadings2, LAboutIconText, LAboutProfilePicture, LAboutSummaryInterest, LAboutSummaryText } from "../Themes/Light/AboutPageStyles";
-import { MyThemeContext } from "../Contexts/themeContext";
 import { resumeDownload, resumelink } from "../Sources/Links";
 
 const About = () => {
   const { AboutRef } = useContext(ScrollContext);
-  const { theme } = useContext(MyThemeContext);
+  const { colorMode } = useColorMode();
 
   const handleClick = () => {
     window.open(resumelink, "_blank");
@@ -34,40 +33,44 @@ const About = () => {
     <>
       <Flex ref={AboutRef} {...AboutHeadFlex}>
         <Flex>
-          <Heading {...(theme ? AboutHeadings : LAboutHeadings)}>About&nbsp;</Heading>
-          <Heading {...(theme ? AboutHeadings2 : LAboutHeadings2)}>Me</Heading>
+          <Heading {...AboutHeadings}>About&nbsp;</Heading>
+          <Heading {...AboutHeadings2}>Me</Heading>
         </Flex>
         <Flex {...AboutAfterHeading}>
           <Flex {...AboutAfterHeadingMain}>
-            <Flex flex={2}>
-              <Image {...(theme ? AboutProfilePicture : LAboutProfilePicture)} src={theme ? ProfilePicBW : ProfilePicBlue} />
+            <Flex flex={2} w={"100%"} justifyContent={"center"}>
+              <Image {...AboutProfilePicture} src={colorMode==="dark" ? ProfilePicBW : ProfilePicBlue} />
             </Flex>
             <Flex flex={5} direction={"column"}>
-              <Text {...(theme ? AboutSummaryText : LAboutSummaryText)}>
-                Hi, I'm Sayyed Sharuk from Ahmednagar, Maharashtra, currently learning Full Stack development at Masai School. I hold a Post Graduation in Master of Electronics Science from the University of Pune. Passionate about creating innovative digital solutions, I have a strong foundation in web development, including HTML, CSS, JavaScript, and React. Always eager to learn and explore new technologies, I'm excited about the future of web development and the endless possibilities it offers. Thanks for reading, and I hope to connect with you soon!
+              <Text {...AboutSummaryText}>
+              I am Sayyed Sharuk from Ahmednagar, Maharashtra, India. I am currently pursuing Full Stack development at Masai School. I hold a Post Graduation degree in Master of Electronics Science from the University of Pune.
+
+              I have a passion for creating innovative digital solutions and possess a strong foundation in web development technologies such as HTML, CSS, JavaScript, and React. My enthusiasm for exploring new technologies and my eagerness to learn makes me excited about the future of web development and the limitless possibilities it offers.
+              
+              Thank you for taking the time to read my introduction. I look forward to connecting with you soon!
               </Text>
               <a href={resumeDownload} onClick={handleClick}>
-                <Button ml={"8"} my={"4"} bgColor={"white"} boxShadow={"2xl"} _hover={{ bgColor: "black", color: "white" }} p={"6"} fontSize={"xl"}>
+                <Button {...AboutResumeButton}>
                   Resume
                 </Button>
               </a>
 
-              <Text {...(theme ? AboutSummaryInterest : LAboutSummaryInterest)}>Some of My Interest apart from Coding:</Text>
+              <Text {...AboutSummaryInterest}>Some of My Interest apart from Coding:</Text>
               <Flex m={"1"}>
-                <IconButton {...(theme ? aboutButtonsTop : LaboutButtonsTop)} icon={<MdOfflineBolt style={{ fontSize: "16px" }} />} />
-                <Text {...(theme ? AboutIconText : LAboutIconText)}>Electronics</Text>
+                <IconButton {...aboutButtonsTop} icon={<MdOfflineBolt style={{ fontSize: "16px" }} />} />
+                <Text {...AboutIconText}>Electronics</Text>
               </Flex>
               <Flex m={"1"}>
-                <IconButton {...(theme ? aboutButtonsTop : LaboutButtonsTop)} icon={<MdSportsEsports style={{ fontSize: "16px" }} />} />
-                <Text {...(theme ? AboutIconText : LAboutIconText)}>E-Sports</Text>
+                <IconButton {...aboutButtonsTop} icon={<MdSportsEsports style={{ fontSize: "16px" }} />} />
+                <Text {...AboutIconText}>E-Sports</Text>
               </Flex>
               <Flex m={"1"}>
-                <IconButton {...(theme ? aboutButtonsTop : LaboutButtonsTop)} icon={<BsFillPlayCircleFill style={{ fontSize: "16px" }} />} />
-                <Text {...(theme ? AboutIconText : LAboutIconText)}>Movies</Text>
+                <IconButton {...aboutButtonsTop} icon={<BsFillPlayCircleFill style={{ fontSize: "16px" }} />} />
+                <Text {...AboutIconText}>Movies</Text>
               </Flex>
               <Flex m={"1"}>
-                <IconButton {...(theme ? aboutButtonsTop : LaboutButtonsTop)} icon={<MdGrass style={{ fontSize: "16px" }} />} />
-                <Text {...(theme ? AboutIconText : LAboutIconText)}>Growing Plants</Text>
+                <IconButton {...aboutButtonsTop} icon={<MdGrass style={{ fontSize: "16px" }} />} />
+                <Text {...AboutIconText}>Growing Plants</Text>
               </Flex>
             </Flex>
           </Flex>

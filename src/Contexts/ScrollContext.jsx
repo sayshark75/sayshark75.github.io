@@ -10,11 +10,11 @@ const ScrollContextProvider = ({ children }) => {
   const ContactRef = useRef(null);
 
   const handleHomeRef = () => {
-    HomeRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    HomeRef.current?.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
   };
   
   const handleAboutRef = () => {
-    AboutRef.current?.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+    AboutRef.current?.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
   };
 
   const handleSkillsRef = () => {
@@ -26,7 +26,7 @@ const ScrollContextProvider = ({ children }) => {
   };
 
   const handleContactRef = () => {
-    ContactRef.current?.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+    ContactRef.current?.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
   };
 
   return (

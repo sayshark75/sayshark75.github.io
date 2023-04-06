@@ -1,13 +1,12 @@
-import { White, WhiteTrans2 } from "../ColorPallet";
 
 export const TechSkillsHeading1 = {
   transition: "500ms",
-  color: WhiteTrans2,
+  color: "DarkBlue_WTrans2",
   mt: "50px",
 };
 export const TechSkillsHeading2 = {
   transition: "500ms",
-  color: White,
+  color: "Blue_White",
   mt: "50px",
 };
 
@@ -17,11 +16,21 @@ export const TechSkillsFlexTopMain = {
   justifyContent: "center",
   alignItems: "center",
 };
+export const TechSkillsMainCard = {
+  borderRadius: "8",
+  mt: "4",
+  px: "8",
+  py: "2",
+  boxShadow: "2xl",
+  bgColor: "White_White",
+  color: "Black_Black",
+  direction: "column",
+};
 export const TechSkillsInGridFlex = {
   transition: "500ms",
   borderRadius: "10",
   padding: "4",
-  backgroundColor: "#232323",
+  backgroundColor: "DarkGrey_Black",
   _hover: { boxShadow: "dark-lg" },
   direction: "column",
   justifyContent: "center",
@@ -38,7 +47,7 @@ export const TechSkillsGrid = {
 export const TechSkillsText = {
   transition: "500ms",
   as: "b",
-  color: White,
+  color: "White_White",
   fontSize: { base: "12px", sm: "sm", md: "md" },
 };
 

@@ -1,14 +1,13 @@
-import { White, WhiteTrans2, Black, BlackTrans1, BlackTrans3 } from "../ColorPallet";
 
 export const NavabrButtonStyleLaptop = {
   transition: "500ms",
   gap: 1,
   borderRadius: "0px",
-  bgColor: BlackTrans3,
-  color: White,
+  bgColor: "WTrans1_BTrans3",
+  color: "DarkBlue_White",
   _hover: {
-    backgroundColor: White,
-    color: BlackTrans1,
+    backgroundColor: "DarkBlue_White",
+    color: "WTrans3_BTrans1",
   },
 };
 
@@ -18,14 +17,14 @@ export const NavbarLaptopBar = {
   zIndex: "1",
   top: "0px",
   w: "100%",
-  bgColor: Black,
-  color: White,
+  bgColor: "White_Black",
+  color: "DarkBlue_White",
   gap: "2",
   py: "1",
 };
 export const NavbarLaptopLogoStyle = {
   transition: "500ms",
-  color: WhiteTrans2,
+  color: "DarkBlue_WTrans2",
   cursor: "pointer",
   _hover: { textShadow: "#CCC 1px 1px 2px" },
   ml: 3,
@@ -41,8 +40,8 @@ export const NavbarMobileBar = {
   zIndex: "1",
   h: "70px",
   w: "100%",
-  bgColor: Black,
-  color: White,
+  bgColor: "White_Black",
+  color: "DarkBlue_White",
   justifyContent: "center",
 };
 export const NavbarButtonStyleMobile = {
@@ -50,10 +49,10 @@ export const NavbarButtonStyleMobile = {
   h: "100%",
   fontSize: "sm",
   borderRadius: "0px",
-  bgColor: BlackTrans1,
-  color: White,
-  _active: { backgroundColor: White, color: BlackTrans1 },
-  _hover: { backgroundColor: BlackTrans1, color: White },
+  bgColor: "WTrans3_BTrans1",
+  color: "DarkBlue_White",
+  _active: { backgroundColor: "DarkBlue_White", color: "WTrans3_BTrans1" },
+  _hover: { backgroundColor: "WTrans3_BTrans1", color: "DarkBlue_White" },
 };
 export const NavbarButtonInsideBoxMobile = {
   transition: "500ms",
@@ -68,10 +67,10 @@ export const NavbarThemeButtonConfig = {
   zIndex: "2",
   size: "md",
   mx: { base: "3", sm: "2", md: "3", lg: "5", xl: "10" },
-  color: Black,
-  bgColor: White,
-  _hover: { bgColor: Black, color: White },
-  _active: { backgroundColor: White, color: Black },
+  color: "White_Black",
+  bgColor: "DarkBlue_White",
+  _hover: { bgColor: "White_Black", color: "DarkBlue_White" },
+  _active: { backgroundColor: "DarkBlue_White", color: "White_Black" },
 };
 
 export const NavbarThemeMainFlex = {
@@ -80,5 +79,6 @@ export const NavbarThemeMainFlex = {
   top: "80%",
   left: "85%",
   justifyContent: "flex-end",
-  zIndex:"2"
+  zIndex:"2",
+  w:"60px"
 };
