@@ -75,36 +75,36 @@ const Navbar = () => {
         <Flex {...NavbarMobileBar}>
           <Button onClick={handleHomeRef} {...NavbarButtonStyleMobile}>
             <Flex {...NavbarButtonInsideBoxMobile}>
-              <FaHome /> Home
+              <FaHome style={{fontSize:"20px"}} /> Home
             </Flex>
           </Button>
           <Button onClick={handleAboutRef} {...NavbarButtonStyleMobile}>
             <Flex {...NavbarButtonInsideBoxMobile}>
-              <MdInfo />
-              About Me
+              <MdInfo style={{fontSize:"20px"}} />
+              About
             </Flex>
           </Button>
           <Button onClick={handleProjectsRef} {...NavbarButtonStyleMobile}>
             <Flex {...NavbarButtonInsideBoxMobile}>
-              <MdDevices />
+              <MdDevices style={{fontSize:"20px"}} />
               Projects
             </Flex>
           </Button>
           <Button onClick={handleSkillsRef} {...NavbarButtonStyleMobile}>
             <Flex {...NavbarButtonInsideBoxMobile}>
-              <BsStars />
+              <BsStars style={{fontSize:"20px"}} />
               Skills
             </Flex>
           </Button>
           <Button onClick={handleContactRef} {...NavbarButtonStyleMobile}>
             <Flex {...NavbarButtonInsideBoxMobile}>
-              <MdContacts /> Contact
+              <MdContacts style={{fontSize:"20px"}} /> Contact
             </Flex>
           </Button>
           <Button {...NavbarButtonStyleMobile}>
             <a href={resumeDownload} onClick={handleClick}>
               <Flex {...NavbarButtonInsideBoxMobile}>
-                <MdContactPage />
+                <MdContactPage style={{fontSize:"20px"}} />
                 Resume
               </Flex>
             </a>

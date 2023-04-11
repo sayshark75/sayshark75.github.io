@@ -57,6 +57,7 @@ export const AboutProfilePicture = {
   transition: "500ms",
   border: `8px solid`,
   borderColor: "SuiteBlue_White",
+  borderRadius:"50%",
   w: { base: "250px", sm: "300px", md: "500px" },
 };
 export const AboutSummaryText = {

@@ -39,7 +39,7 @@ const About = () => {
         <Flex {...AboutAfterHeading}>
           <Flex {...AboutAfterHeadingMain}>
             <Flex flex={2} w={"100%"} justifyContent={"center"}>
-              <Image {...AboutProfilePicture} src={colorMode==="dark" ? ProfilePicBW : ProfilePicBlue} />
+              <Image {...AboutProfilePicture} src={ProfilePicBlue} />
             </Flex>
             <Flex flex={5} direction={"column"}>
               <Text {...AboutSummaryText}>

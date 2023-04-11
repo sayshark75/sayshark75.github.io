@@ -39,7 +39,6 @@ const ProjectsCard = ({ live, github, imgDark, imgLight, heading1, heading2, sum
           {heading2 ? <Heading {... ProjectDetailsHeading2}>{heading2}</Heading> : null}
         </Flex>
         <Text {... ProjectDetailsTextSummary}>{summary}</Text>
-        hello
         <Flex wrap={"wrap"} {...ProjectDetailsTextStackFlex}>
           {TStack[0] ? (
             <Tooltip {... ProjectDetailsToolTip} label={"React"}>
