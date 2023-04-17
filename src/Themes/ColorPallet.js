@@ -13,7 +13,7 @@ export const HeartRed = "#F70000";
 
 // Common In Both
 export const White = "#FFFFFF";
-export const WhiteTrans0 = "rgba(255, 255, 255, 0.06)";
+export const WhiteTrans0 = "rgba(255, 255, 255, 0.16)";
 export const WhiteTrans1 = "rgba(255, 255, 255, 0.48)";
 export const WhiteTrans2 = "rgba(255, 255, 255, 0.64)";
 export const WhiteTrans3 = "rgba(255, 255, 255, 0.80)";
