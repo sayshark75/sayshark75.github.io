@@ -1,19 +1,22 @@
-import { Flex, Heading, Image, Text, Tooltip, IconButton, useColorMode } from "@chakra-ui/react";
+import { Flex, Heading, Image, Text, Tooltip, IconButton, useColorMode, useDisclosure } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { VscGithub } from "react-icons/vsc";
 import { MdAlternateEmail, MdCall, MdMyLocation } from "react-icons/md";
 import { BsLinkedin, BsTwitter } from "react-icons/bs";
 import { aboutFlex, aboutText, heading1, heading2, homeButtonsTop, homeParentFlex } from "../Themes/Styles/HomePageStyles";
 import { toolTipStyle } from "../Themes/Styles/Miscellaneous";
-import { githubLink, linkedInLink, locationLink, mailLink, phoneLink, twitterLink } from "../Sources/Links";
+import { githubLink, linkedInLink, locationLink, phoneLink, twitterLink } from "../Sources/Links";
 import { ScrollContext } from "../Contexts/ScrollContext";
 import { typeImageBase, typeImageBaseLite } from "../Sources/Images";
 import { FadeIn } from "react-slide-fade-in";
 import { fadeInConfigBottom } from "../Animations/Animations";
+import EmailModal from "../Components/EmailModal";
 
 const Home = () => {
   const { HomeRef } = useContext(ScrollContext);
   const { colorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <>
       <Flex ref={HomeRef} {...homeParentFlex}>
@@ -38,9 +41,7 @@ const Home = () => {
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={500}>
             <Tooltip {...toolTipStyle} label={"Email"}>
-              <a href={mailLink} target={"_blank"} rel="noreferrer">
-                <IconButton {...homeButtonsTop} icon={<MdAlternateEmail />} />
-              </a>
+              <IconButton {...homeButtonsTop} onClick={onOpen} icon={<MdAlternateEmail />} />
             </Tooltip>
           </FadeIn>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={600}>
@@ -73,6 +74,8 @@ const Home = () => {
           </FadeIn>
         </Flex>
       </Flex>
+      {/** Email Modal used for different parts */}
+      <EmailModal isOpen={isOpen} onClose={onClose} />
     </>
   );
 };

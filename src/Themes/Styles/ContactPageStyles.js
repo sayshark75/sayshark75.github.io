@@ -27,3 +27,24 @@ export const ContactButtons = {
   _active: { backgroundColor: "DarkBlue_White", color: "White_Black" },
   fontSize:"24px"
 };
+
+export const ContactCopyButtons = {
+  borderRadius: "3",
+  size: "xs",
+  w: "300px",
+  p: "5",
+  gap: "3",
+  justifyContent: "space-between",
+  color: "White_Black",
+  bgColor: "DarkBlue_White",
+  transition: "500ms",
+  _hover: { bgColor: "#0086FC", color: "DarkBlue_White" },
+  _active: { backgroundColor: "#35FC00", color: "White_Black" },
+};
+
+export const ContactCopy = {
+  transition: "500ms",
+  as: "b",
+  fontSize: "sm",
+  color: "White_Black",
+};

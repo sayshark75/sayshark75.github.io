@@ -1,9 +1,9 @@
-
 export const aboutButtonsTop = {
   borderRadius: "3",
   size: "xs",
   ml: "8",
   mr: "2",
+  gap: "3",
   color: "White_Black",
   bgColor: "DarkBlue_White",
   transition: "500ms",
@@ -25,7 +25,7 @@ export const AboutHeadFlex = {
   transition: "500ms",
   direction: "column",
   w: "100%",
-  pt:"12",
+  pt: "12",
   justifyContent: "center",
   alignItems: "center",
 };
@@ -47,7 +47,7 @@ export const AboutAfterHeading = {
 };
 export const AboutAfterHeadingMain = {
   transition: "500ms",
-  direction: { base: "column", sm: "column", md: "row" },
+  direction: { base: "column", sm: "column", md: "column", lg: "row" },
   justifyContent: "center",
   m: "1",
   alignItems: { base: "center", md: "flex-start" },
@@ -55,9 +55,7 @@ export const AboutAfterHeadingMain = {
 };
 export const AboutProfilePicture = {
   transition: "500ms",
-  border: `8px solid`,
-  borderColor: "SuiteBlue_White",
-  borderRadius:"50%",
+  borderRadius: "50%",
   w: { base: "250px", sm: "300px", md: "500px" },
 };
 export const AboutSummaryText = {
@@ -72,15 +70,7 @@ export const AboutContactCopy = {
   transition: "500ms",
   as: "b",
   fontSize: "sm",
-  color: "DarkBlue_WTrans3",
-  mx: "8",
-};
-export const AboutSummaryInterest = {
-  transition: "500ms",
-  as: "b",
-  fontSize: "md",
-  color: "DarkBlue_WTrans3",
-  py: "4",
+  color: "White_Black",
   mx: "8",
 };
 export const AboutIconText = {
@@ -88,4 +78,32 @@ export const AboutIconText = {
   as: "b",
   fontSize: "md",
   color: "DarkBlue_WTrans3",
+};
+
+export const AboutStatStyle = {
+  grid: {
+    templateColumns: ["repeat(1,200px)", "repeat(1,200px)", "repeat(3,200px)"],
+    color: "DarkBlue_WTrans3",
+    width: "100%",
+    gridGap: "12",
+    placeContent: "center",
+  },
+  card: {
+    direction: "column",
+    bgColor: "White_Gray",
+    borderRadius: "25px",
+    boxShadow: "xl",
+    p: "8",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "3",
+  },
+  icon: {
+    as: "b",
+    fontSize: "30px",
+  },
+  text: {
+    as: "b",
+    fontSize: "md",
+  },
 };

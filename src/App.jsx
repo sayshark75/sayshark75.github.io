@@ -1,18 +1,17 @@
 import { Flex } from "@chakra-ui/react";
 
-import About from "./Components/About";
-import Footer from "./Components/Footer";
-import Home from "./Components/Home";
-import Navbar from "./Components/Navbar";
-import Projects from "./Components/Projects";
 import { FadeIn } from "react-slide-fade-in";
 import { fadeInConfigLeft } from "./Animations/Animations";
-import TechnicalSkills from "./Components/TechnicalSkills";
-import Contact from "./Components/Contact";
 import { AppMainFlex } from "./Themes/Styles/AppPageStyles";
+import Navbar from "./Pages/Navbar";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
+import TechnicalSkills from "./Pages/TechnicalSkills";
+import Contact from "./Pages/Contact";
+import Footer from "./Pages/Footer";
 
 function App() {
-
   return (
     <Flex {...AppMainFlex}>
       <Navbar />

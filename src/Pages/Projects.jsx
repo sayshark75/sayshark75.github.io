@@ -2,7 +2,7 @@ import { Flex, Heading } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { ScrollContext } from "../Contexts/ScrollContext";
 import { ProjectsData } from "../Sources/ProjectsData.js";
-import ProjectsComp from "./Clusters/ProjectsComp.jsx";
+import ProjectsCard from "../Components/ProjectsComp";
 
 import { MainProjectHeadFlex, MainProjectHeading1, MainProjectHeading2, MainProjectHeadlineFlex } from "../Themes/Styles/ProjectPageStyles";
 import GithubStats from "./GithubStats";
@@ -18,7 +18,7 @@ const Projects = () => {
           <Heading {...MainProjectHeading2}>Projects</Heading>
         </Flex>
         {ProjectsData.map((el) => {
-          return <ProjectsComp {...el} />;
+          return <ProjectsCard {...el} />;
         })}
         <Flex {...MainProjectHeadlineFlex}>
           <Heading {...MainProjectHeading1}>Days &nbsp;</Heading>

@@ -1,8 +1,6 @@
 import {
   project1Dark,
   project1Light,
-  project2Dark,
-  project2Light,
   project3Dark,
   project3Light,
   project4Dark,
@@ -23,8 +21,6 @@ import {
   glamazonLive,
   indianExpressGithub,
   indianExpressLive,
-  myTheresaGithub,
-  myTheresaLive,
 } from "./Links";
 
 export const ProjectsData = [
@@ -33,7 +29,7 @@ export const ProjectsData = [
     github: KoovsGithub,
     imgDark: project6Dark,
     imgLight: project6Light,
-    heading1: "Kapda.lo",
+    heading1: "KOOVS Ecommerce",
     heading2: "(Koovs.com Clone)",
     summary: "koovs is a Ecommerce website which helps you to find the different kinds of Fashion Related Products.",
     TStack: [true, true, true, true, true, false, true, false, true, true, true],
@@ -69,17 +65,17 @@ export const ProjectsData = [
     summary: "A Ecommerce Website that sells Products Related to Cosmetics and Beauty. Build on ReactJs for Frontend and Custom Server (Json-server) on Backend.",
     TStack: [true, true, true, true, true, false, false, false, false, false, false],
   },
-  {
-    live: myTheresaLive,
-    github: myTheresaGithub,
-    imgDark: project2Dark,
-    imgLight: project2Light,
-    heading1: "MyFashionCart.com",
-    heading2: "(MyTheresa.com Clone)",
-    summary:
-      "A Ecommerce Website that sells Products Related to Cloths and Accessories. Build on HTML and CSS for Frontend and Custom Server (Json-server) with JavaScript on Backend.",
-    TStack: [false, false, true, true, true, false, false, false, false, false, false],
-  },
+  // {
+  //   live: myTheresaLive,
+  //   github: myTheresaGithub,
+  //   imgDark: project2Dark,
+  //   imgLight: project2Light,
+  //   heading1: "MyFashionCart.com",
+  //   heading2: "(MyTheresa.com Clone)",
+  //   summary:
+  //     "A Ecommerce Website that sells Products Related to Cloths and Accessories. Build on HTML and CSS for Frontend and Custom Server (Json-server) with JavaScript on Backend.",
+  //   TStack: [false, false, true, true, true, false, false, false, false, false, false],
+  // },
   {
     live: indianExpressLive,
     github: indianExpressGithub,

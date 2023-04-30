@@ -2,6 +2,9 @@ export const githubLink = "https://github.com/sayshark75";
 
 export const mailLink = "mailto:sayyedsharuk75@gmail.com";
 
+export const mailLinkTemplate =
+  "mailto:sayyedsharuk75@gmail.com?subject=Subject%20Related%20to%20shortlist%20or%20Job%20Role%20Offer&body=Brief%20Declaration%0A%0ARequirements%20for%20Job%20role%0A%0ASome%20information%20about%20Interview%20Process%0A%0AIf%20Applicable%0ASalary%20Range%0A%20#LPA%20to%20#LPA%0AAny%20CTC%20Related%20Details%0A%0AJob%20Description%0AMy%20Role%20in%20the%20Respected%20Company%0A%0AYour%20Signature%20%0A%0AAny%20Task%20or%20Asignment?";
+
 export const phoneLink = "tel:+917588244148";
 
 export const linkedInLink = "https://www.linkedin.com/in/sharuk-sayyed-b65a6b137/";
@@ -41,4 +44,3 @@ export const GadgetRamboLive = "https://gadget-rambo.netlify.app/";
 export const KoovsGithub = "https://github.com/sukanta255/ordinary-summer-5089";
 
 export const KoovsLive = "https://frontend-mohit-6164.vercel.app/";
-

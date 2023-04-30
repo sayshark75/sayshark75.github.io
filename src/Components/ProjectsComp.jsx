@@ -14,7 +14,7 @@ import {
   ProjectDetailsViewButtons,
   ProjectHeadFlex,
   ProjectImgStyle,
-} from "../../Themes/Styles/ProjectPageStyles";
+} from "../Themes/Styles/ProjectPageStyles";
 
 const ProjectsCard = ({ live, github, imgDark, imgLight, heading1, heading2, summary, TStack }) => {
   const { colorMode } = useColorMode();
