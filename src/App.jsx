@@ -15,12 +15,8 @@ function App() {
   return (
     <Flex {...AppMainFlex}>
       <Navbar />
-      <FadeIn {...fadeInConfigLeft} durationInMilliseconds={1000} delayInMilliseconds={500}>
         <Home />
-      </FadeIn>
-      <FadeIn {...fadeInConfigLeft} durationInMilliseconds={1000} delayInMilliseconds={1000}>
         <About />
-      </FadeIn>
       <Projects />
       <TechnicalSkills />
       <Contact />

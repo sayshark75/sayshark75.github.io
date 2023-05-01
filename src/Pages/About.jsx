@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Button, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Grid, Heading, Image, List, ListIcon, ListItem, Text, useBreakpointValue } from "@chakra-ui/react";
 
 import { MdOutlineWbSunny } from "react-icons/md";
 import { BsCodeSlash } from "react-icons/bs";
@@ -30,6 +30,10 @@ const About = () => {
     window.open(resumelink, "_blank");
   };
 
+  const summary = useBreakpointValue({
+    base: true,
+    sm: false,
+  });
   useEffect(() => {
     const codingInterval = setInterval(() => {
       setCoding((prev) => (prev < 1400 ? prev + 5 : prev));
@@ -50,8 +54,6 @@ const About = () => {
     };
   }, []);
 
-  
-
   return (
     <>
       <Flex ref={AboutRef} {...AboutHeadFlex}>
@@ -68,10 +70,32 @@ const About = () => {
             </Flex>
             <Flex flex={5} direction={"column"}>
               <Text {...AboutSummaryText}>
-                I am Sayyed Sharuk from Ahmednagar, Maharashtra, India. I am currently pursuing Full Stack development at Masai School. I hold a Post Graduation degree in Master of
-                Electronics Science from the University of Pune. I have a passion for creating innovative digital solutions and possess a strong foundation in web development
-                technologies such as HTML, CSS, JavaScript, and React. My enthusiasm for exploring new technologies and my eagerness to learn makes me excited about the future of
-                web development and the limitless possibilities it offers. Thank you for taking the time to read my introduction. I look forward to connecting with you soon!
+                {summary ? (
+                  <List spacing={3} my={"5"}>
+                    <ListItem>
+                      <ListIcon as={BsCodeSlash} color="green.800" />A Full Stack Developer.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      With a diverse skill set.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      Passion for solving problems.
+                    </ListItem>
+                    {/* You can also use custom icons from react-icons */}
+                    <ListItem>
+                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      Collaborates well with teams.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      Deliver Quality products.
+                    </ListItem>
+                  </List>
+                ) : (
+                  "A Full Stack Developer who enjoys solving problems and building quality projects. With a diverse set of skills and technologies, Can develop robust and efficient products. Keep up with the latest advancements in the field, and work well with teams to deliver the best possible results."
+                )}
               </Text>
               <a href={resumeDownload} onClick={handleClick}>
                 <Button {...AboutResumeButton}>Resume</Button>
