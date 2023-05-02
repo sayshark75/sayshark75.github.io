@@ -82,21 +82,22 @@ export const AboutIconText = {
 
 export const AboutStatStyle = {
   grid: {
-    templateColumns: ["repeat(1,200px)", "repeat(1,200px)", "repeat(3,200px)"],
+    templateColumns: ["repeat(2,140px)", "repeat(2,140px)", "repeat(2,200px)", "repeat(4,200px)"],
     color: "DarkBlue_WTrans3",
     width: "100%",
-    gridGap: "12",
+    gridGap: ["2", "2", "12"],
     placeContent: "center",
   },
   card: {
     direction: "column",
     bgColor: "White_Gray",
     borderRadius: "25px",
-    boxShadow: "xl",
-    p: "8",
+    boxShadow: "lg",
+    p: ["4", "4", "8"],
     justifyContent: "center",
     alignItems: "center",
     gap: "3",
+    textAlign: "center",
   },
   icon: {
     as: "b",

@@ -4,6 +4,7 @@ import { Button, Flex, Grid, Heading, Image, List, ListIcon, ListItem, Text, use
 import { MdOutlineWbSunny } from "react-icons/md";
 import { BsCodeSlash } from "react-icons/bs";
 import { RiPagesFill } from "react-icons/ri";
+import { SiGithub } from "react-icons/si";
 import { ScrollContext } from "../Contexts/ScrollContext";
 
 import {
@@ -25,6 +26,7 @@ const About = () => {
   const [coding, setCoding] = useState(0);
   const [dsa, setDsa] = useState(0);
   const [proj, setProj] = useState(0);
+  const [git, setGit] = useState(0);
 
   const handleClick = () => {
     window.open(resumelink, "_blank");
@@ -37,20 +39,25 @@ const About = () => {
   useEffect(() => {
     const codingInterval = setInterval(() => {
       setCoding((prev) => (prev < 1400 ? prev + 5 : prev));
-    }, 10);
+    }, 14);
 
     const dsaInterval = setInterval(() => {
       setDsa((prev) => (prev < 800 ? prev + 2 : prev));
     }, 9);
 
     const projInterval = setInterval(() => {
-      setProj((prev) => (prev < 7 ? prev + 1 : prev));
-    }, 430);
+      setProj((prev) => (prev < 6 ? prev + 1 : prev));
+    }, 680);
+
+    const gitInterval = setInterval(() => {
+      setGit((prev) => (prev < 750 ? prev + 2 : prev));
+    }, 9);
 
     return () => {
       clearInterval(codingInterval);
       clearInterval(dsaInterval);
       clearInterval(projInterval);
+      clearInterval(gitInterval);
     };
   }, []);
 
@@ -73,23 +80,22 @@ const About = () => {
                 {summary ? (
                   <List spacing={3} my={"5"}>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="green.800" />A Full Stack Developer.
+                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />A Full Stack Developer.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
                       With a diverse skill set.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
                       Passion for solving problems.
                     </ListItem>
-                    {/* You can also use custom icons from react-icons */}
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
                       Collaborates well with teams.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="green.800" />
+                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
                       Deliver Quality products.
                     </ListItem>
                   </List>
@@ -125,6 +131,13 @@ const About = () => {
           </Text>
           <Heading>{proj}+</Heading>
           <Text {...AboutStatStyle.text}>Ongoing Projects</Text>
+        </Flex>
+        <Flex {...AboutStatStyle.card}>
+          <Text {...AboutStatStyle.icon}>
+            <SiGithub />
+          </Text>
+          <Heading>{git}+</Heading>
+          <Text {...AboutStatStyle.text}>Github Contributions</Text>
         </Flex>
       </Grid>
     </>

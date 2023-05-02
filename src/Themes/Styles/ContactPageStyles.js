@@ -29,7 +29,7 @@ export const ContactButtons = {
 };
 
 export const ContactCopyButtons = {
-  borderRadius: "3",
+  borderRadius: "30px",
   size: "xs",
   w: "300px",
   p: "5",

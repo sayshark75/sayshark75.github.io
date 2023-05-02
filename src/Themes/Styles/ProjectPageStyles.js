@@ -1,4 +1,23 @@
-import { GCLLevel1, GCLLevel2, GCLLevel3, GCLLevel4, GCLBase, GCDLevel1, GCDLevel2, GCDLevel3, GCDLevel4, GCDBase, GCLBg, GCLTitle, GCLText, GCLRing, GCDBg, GCDTitle, GCDText, GCDRing } from "../ColorPallet";
+import {
+  GCLLevel1,
+  GCLLevel2,
+  GCLLevel3,
+  GCLLevel4,
+  GCLBase,
+  GCDLevel1,
+  GCDLevel2,
+  GCDLevel3,
+  GCDLevel4,
+  GCDBase,
+  GCLBg,
+  GCLTitle,
+  GCLText,
+  GCLRing,
+  GCDBg,
+  GCDTitle,
+  GCDText,
+  GCDRing,
+} from "../ColorPallet";
 
 export const ProjectHeadFlex = {
   transition: "500ms",
@@ -7,7 +26,9 @@ export const ProjectHeadFlex = {
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
-  _hover:{boxShadow:'2xl'},
+  boxShadow: "xl",
+  border:"6px double",
+  borderColor:"Blue_White",
   p: "5",
   justifyContent: "center",
   alignItems: "center",
@@ -72,14 +93,13 @@ export const ProjectDetailsIconButtonTop = {
   width: "7rem",
   _hover: { bgColor: "White_Black", color: "Black_White" },
   bgColor: "LGHex_LBHex",
-  border:"2px solid",
-  borderColor:"LGHex_LBHex"
-
+  border: "2px solid",
+  borderColor: "LGHex_LBHex",
 };
 export const ProjectDetailsIconButton = {
   transition: "500ms",
   fontSize: "30px",
-  _hover: { bgColor: "Black_Black",color:"White_White" },
+  _hover: { bgColor: "Black_Black", color: "White_White" },
   bgColor: "White_White",
 };
 
@@ -116,7 +136,7 @@ export const GCardD = {
 export const MainProjectHeadFlex = {
   transition: "500ms",
   py: "8",
-  mx:"12",
+  mx: "12",
   justifyContent: "center",
   alignItems: "center",
   direction: "column",
@@ -137,10 +157,10 @@ export const MainProjectHeading2 = {
 };
 export const CalColorText = {
   color: "DarkBlue_White",
-  p:"6",
-  borderRadius:"8",
-  _hover:{boxShadow: "dark-lg"},
-  transition:"700ms"
+  p: "6",
+  borderRadius: "8",
+  _hover: { boxShadow: "xl" },
+  transition: "700ms",
 };
 export const CalStyleProps = {
   fontSize: 16,
