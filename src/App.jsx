@@ -1,7 +1,4 @@
 import { Flex } from "@chakra-ui/react";
-
-import { FadeIn } from "react-slide-fade-in";
-import { fadeInConfigLeft } from "./Animations/Animations";
 import { AppMainFlex } from "./Themes/Styles/AppPageStyles";
 import Navbar from "./Pages/Navbar";
 import About from "./Pages/About";
@@ -15,8 +12,8 @@ function App() {
   return (
     <Flex {...AppMainFlex}>
       <Navbar />
-        <Home />
-        <About />
+      <Home />
+      <About />
       <Projects />
       <TechnicalSkills />
       <Contact />

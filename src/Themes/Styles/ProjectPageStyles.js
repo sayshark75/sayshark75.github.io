@@ -27,8 +27,8 @@ export const ProjectHeadFlex = {
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
   boxShadow: "xl",
-  border:"6px double",
-  borderColor:"Blue_White",
+  border: "6px double",
+  borderColor: "Blue_White",
   p: "5",
   justifyContent: "center",
   alignItems: "center",
@@ -99,8 +99,8 @@ export const ProjectDetailsIconButtonTop = {
 export const ProjectDetailsIconButton = {
   transition: "500ms",
   fontSize: "30px",
-  _hover: { bgColor: "Black_Black", color: "White_White" },
-  bgColor: "White_White",
+  bgColor: "transparent",
+  _hover: { bgColor: "transparent" },
 };
 
 export const GCLTheme = {

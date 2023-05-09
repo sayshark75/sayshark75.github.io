@@ -9,7 +9,7 @@ const GithubStats = () => {
   return (
     <>
       <Flex {...CalColorText}>
-        <GitHubCalendar {...CalStyleProps} theme={colorMode === "light" ? GCDTheme : GCLTheme} username="sayshark75" />
+        <GitHubCalendar {...CalStyleProps} hideTotalCount theme={colorMode === "light" ? GCDTheme : GCLTheme} username="sayshark75" />
       </Flex>
       <Text align={"center"}>
         <Flex w={{ base: "280px", sm: "320px", md: "440px", lg: "560px" }} gap={5} mt={6} direction={"column"} justifyContent={"center"}>

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Button, Flex, Grid, Heading, Image, List, ListIcon, ListItem, Text, useBreakpointValue } from "@chakra-ui/react";
 
 import { MdOutlineWbSunny } from "react-icons/md";
@@ -23,10 +23,6 @@ import { resumeDownload, resumelink } from "../Sources/Links";
 
 const About = () => {
   const { AboutRef } = useContext(ScrollContext);
-  const [coding, setCoding] = useState(0);
-  const [dsa, setDsa] = useState(0);
-  const [proj, setProj] = useState(0);
-  const [git, setGit] = useState(0);
 
   const handleClick = () => {
     window.open(resumelink, "_blank");
@@ -36,30 +32,6 @@ const About = () => {
     base: true,
     sm: false,
   });
-  useEffect(() => {
-    const codingInterval = setInterval(() => {
-      setCoding((prev) => (prev < 1400 ? prev + 5 : prev));
-    }, 14);
-
-    const dsaInterval = setInterval(() => {
-      setDsa((prev) => (prev < 800 ? prev + 2 : prev));
-    }, 9);
-
-    const projInterval = setInterval(() => {
-      setProj((prev) => (prev < 6 ? prev + 1 : prev));
-    }, 680);
-
-    const gitInterval = setInterval(() => {
-      setGit((prev) => (prev < 750 ? prev + 2 : prev));
-    }, 9);
-
-    return () => {
-      clearInterval(codingInterval);
-      clearInterval(dsaInterval);
-      clearInterval(projInterval);
-      clearInterval(gitInterval);
-    };
-  }, []);
 
   return (
     <>
@@ -110,33 +82,34 @@ const About = () => {
           </Flex>
         </Flex>
       </Flex>
+
       <Grid {...AboutStatStyle.grid}>
         <Flex {...AboutStatStyle.card}>
           <Text {...AboutStatStyle.icon}>
             <BsCodeSlash />
           </Text>
-          <Heading>{coding}+</Heading>
+          <Heading>1400+</Heading>
           <Text {...AboutStatStyle.text}>Hours of Coding</Text>
         </Flex>
         <Flex {...AboutStatStyle.card}>
           <Text {...AboutStatStyle.icon}>
             <MdOutlineWbSunny />
           </Text>
-          <Heading>{dsa}+</Heading>
+          <Heading>800+</Heading>
           <Text {...AboutStatStyle.text}>DSA Problems</Text>
         </Flex>
         <Flex {...AboutStatStyle.card}>
           <Text {...AboutStatStyle.icon}>
             <RiPagesFill />
           </Text>
-          <Heading>{proj}+</Heading>
+          <Heading>6+</Heading>
           <Text {...AboutStatStyle.text}>Ongoing Projects</Text>
         </Flex>
         <Flex {...AboutStatStyle.card}>
           <Text {...AboutStatStyle.icon}>
             <SiGithub />
           </Text>
-          <Heading>{git}+</Heading>
+          <Heading>750+</Heading>
           <Text {...AboutStatStyle.text}>Github Contributions</Text>
         </Flex>
       </Grid>

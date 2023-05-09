@@ -17,8 +17,8 @@ const Projects = () => {
           <Heading {...MainProjectHeading1}>My&nbsp;</Heading>
           <Heading {...MainProjectHeading2}>Projects</Heading>
         </Flex>
-        {ProjectsData.map((el) => {
-          return <ProjectsCard {...el} />;
+        {ProjectsData.map((el, id) => {
+          return <ProjectsCard key={id} {...el} />;
         })}
         <Flex {...MainProjectHeadlineFlex}>
           <Heading {...MainProjectHeading1}>Days &nbsp;</Heading>
