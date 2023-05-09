@@ -1,4 +1,3 @@
-
 export const NavabrButtonStyleLaptop = {
   transition: "500ms",
   gap: 1,
@@ -56,7 +55,7 @@ export const NavbarButtonStyleMobile = {
 };
 export const NavbarButtonInsideBoxMobile = {
   transition: "500ms",
-  m: 2,
+  m: 1,
   gap: 1,
   direction: "column",
   alignItems: "center",
@@ -79,6 +78,6 @@ export const NavbarThemeMainFlex = {
   top: "80%",
   left: "85%",
   justifyContent: "flex-end",
-  zIndex:"2",
-  w:"60px"
+  zIndex: "2",
+  w: "60px",
 };

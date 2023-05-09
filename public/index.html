@@ -11,7 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet" />
-
+    <script>
+      window.onload = () => {
+        const color = localStorage.getItem("chakra-ui-color-mode");
+        document.querySelector(`meta[name="theme-color"]`).setAttribute("content", color === "light" ? "#8CD7FF" : "#000000");
+      };
+    </script>
     <title>Sayyed Sharuk</title>
   </head>
   <body>
