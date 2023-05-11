@@ -7,6 +7,7 @@ import Projects from "./Pages/Projects";
 import TechnicalSkills from "./Pages/TechnicalSkills";
 import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
+import Certificates from "./Pages/Certificates";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Certificates />
       <Projects />
       <TechnicalSkills />
       <Contact />

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Button, Flex, Grid, Heading, Image, List, ListIcon, ListItem, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Button, Flex, Grid, Heading, Image, List, ListIcon, ListItem, Text, useBreakpointValue, useColorMode } from "@chakra-ui/react";
 
 import { MdOutlineWbSunny } from "react-icons/md";
 import { BsCodeSlash } from "react-icons/bs";
@@ -18,7 +18,7 @@ import {
   AboutStatStyle,
   AboutSummaryText,
 } from "../Themes/Styles/AboutPageStyles";
-import { ProfilePicBlue } from "../Sources/Images";
+import { ProfilePicBW, ProfilePicBlue } from "../Sources/Images";
 import { resumeDownload, resumelink } from "../Sources/Links";
 
 const About = () => {
@@ -33,6 +33,8 @@ const About = () => {
     sm: false,
   });
 
+  const { colorMode } = useColorMode();
+
   return (
     <>
       <Flex ref={AboutRef} {...AboutHeadFlex}>
@@ -44,7 +46,7 @@ const About = () => {
           <Flex {...AboutAfterHeadingMain}>
             <Flex flex={2} w={"100%"} justifyContent={"center"}>
               <Flex borderRadius={"50%"} border={"8px dotted"} borderColor={"SuiteBlue_White"}>
-                <Image {...AboutProfilePicture} src={ProfilePicBlue} />
+                <Image {...AboutProfilePicture} src={colorMode === "light" ? ProfilePicBlue : ProfilePicBW} />
               </Flex>
             </Flex>
             <Flex flex={5} direction={"column"}>
