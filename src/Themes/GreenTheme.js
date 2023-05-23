@@ -4,7 +4,7 @@ export const GreenTheme = extendTheme({
   semanticTokens: {
     colors: {
       mainBackground: {
-        default: "#EBF8FF",
+        default: "#E1FFDE",
         _dark: "rgba(0, 0, 0, 0.92)",
       },
       textPrimary: {

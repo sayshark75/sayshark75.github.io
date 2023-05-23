@@ -4,7 +4,7 @@ export const OrangeTheme = extendTheme({
   semanticTokens: {
     colors: {
       mainBackground: {
-        default: "#EBF8FF",
+        default: "#FFF0DC",
         _dark: "rgba(0, 0, 0, 0.92)",
       },
       textPrimary: {

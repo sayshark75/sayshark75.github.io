@@ -4,7 +4,7 @@ export const PurpleTheme = extendTheme({
   semanticTokens: {
     colors: {
       mainBackground: {
-        default: "#EBF8FF",
+        default: "#F4DCFF",
         _dark: "rgba(0, 0, 0, 0.92)",
       },
       textPrimary: {

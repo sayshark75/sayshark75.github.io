@@ -4,7 +4,7 @@ export const RedTheme = extendTheme({
   semanticTokens: {
     colors: {
       mainBackground: {
-        default: "#EBF8FF",
+        default: "#FED6D6",
         _dark: "rgba(0, 0, 0, 0.92)",
       },
       textPrimary: {
