@@ -1,12 +1,12 @@
-export const NavabrButtonStyleLaptop = {
+export const NavbarButtonStyleLaptop = {
   transition: "500ms",
   gap: 1,
   borderRadius: "0px",
-  bgColor: "WTrans1_BTrans3",
-  color: "DarkBlue_White",
+  bgColor: "iconBtn",
+  color: "textPrimary",
   _hover: {
-    backgroundColor: "DarkBlue_White",
-    color: "WTrans3_BTrans1",
+    backgroundColor: "hoverBg",
+    color: "hoverText",
   },
 };
 
@@ -16,19 +16,19 @@ export const NavbarLaptopBar = {
   zIndex: "1",
   top: "0px",
   w: "100%",
-  bgColor: "White_Black",
-  color: "DarkBlue_White",
+  bgColor: "iconBtn",
+  color: "iconBtnBg",
   gap: "2",
   py: "1",
 };
 export const NavbarLaptopLogoStyle = {
   transition: "500ms",
-  color: "DarkBlue_WTrans2",
+  color: "textPrimary",
   cursor: "pointer",
   _hover: { textShadow: "#CCC 1px 1px 2px" },
   ml: 3,
   as: "b",
-  fontSize: "md",
+  fontSize: "2xl",
 };
 
 export const NavbarMobileBar = {
@@ -39,8 +39,8 @@ export const NavbarMobileBar = {
   zIndex: "1",
   h: "70px",
   w: "100%",
-  bgColor: "White_Black",
-  color: "DarkBlue_White",
+  bgColor: "iconBtn",
+  color: "iconBtnBg",
   justifyContent: "center",
 };
 export const NavbarButtonStyleMobile = {
@@ -48,10 +48,9 @@ export const NavbarButtonStyleMobile = {
   h: "100%",
   fontSize: "sm",
   borderRadius: "0px",
-  bgColor: "WTrans3_BTrans1",
-  color: "DarkBlue_White",
-  _active: { backgroundColor: "DarkBlue_White", color: "WTrans3_BTrans1" },
-  _hover: { backgroundColor: "WTrans3_BTrans1", color: "DarkBlue_White" },
+  bgColor: "iconBtn",
+  color: "textPrimary",
+  _hover: { bgColor: "iconBtn", color: "textPrimary" },
 };
 export const NavbarButtonInsideBoxMobile = {
   transition: "500ms",
@@ -66,10 +65,9 @@ export const NavbarThemeButtonConfig = {
   zIndex: "2",
   size: "md",
   mx: { base: "3", sm: "2", md: "3", lg: "5", xl: "10" },
-  color: "White_Black",
-  bgColor: "DarkBlue_White",
-  _hover: { bgColor: "White_Black", color: "DarkBlue_White" },
-  _active: { backgroundColor: "DarkBlue_White", color: "White_Black" },
+  color: "iconBtn",
+  bgColor: "iconBtnBg",
+  _hover: { bgColor: "iconBtnBgHover", color: "iconBtnHover" },
 };
 
 export const NavbarThemeMainFlex = {

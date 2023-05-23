@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Button, Flex, Grid, Heading, Image, List, ListIcon, ListItem, Text, useBreakpointValue, useColorMode } from "@chakra-ui/react";
+import { Button, Flex, Grid, Heading, Image, List, ListIcon, ListItem, Text, useBreakpointValue } from "@chakra-ui/react";
 
 import { MdOutlineWbSunny } from "react-icons/md";
 import { BsCodeSlash } from "react-icons/bs";
@@ -18,7 +18,7 @@ import {
   AboutStatStyle,
   AboutSummaryText,
 } from "../Themes/Styles/AboutPageStyles";
-import { ProfilePicBW, ProfilePicBlue } from "../Sources/Images";
+import { ProfilePicBlue } from "../Sources/Images";
 import { resumeDownload, resumelink } from "../Sources/Links";
 
 const About = () => {
@@ -33,8 +33,6 @@ const About = () => {
     sm: false,
   });
 
-  const { colorMode } = useColorMode();
-
   return (
     <>
       <Flex ref={AboutRef} {...AboutHeadFlex}>
@@ -45,8 +43,8 @@ const About = () => {
         <Flex {...AboutAfterHeading}>
           <Flex {...AboutAfterHeadingMain}>
             <Flex flex={2} w={"100%"} justifyContent={"center"}>
-              <Flex borderRadius={"50%"} border={"8px dotted"} borderColor={"SuiteBlue_White"}>
-                <Image {...AboutProfilePicture} src={colorMode === "light" ? ProfilePicBlue : ProfilePicBW} />
+              <Flex borderRadius={"50%"} border={"8px dotted"} borderColor={"textPrimary"}>
+                <Image {...AboutProfilePicture} src={ProfilePicBlue} />
               </Flex>
             </Flex>
             <Flex flex={5} direction={"column"}>
@@ -54,22 +52,22 @@ const About = () => {
                 {summary ? (
                   <List spacing={3} my={"5"}>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />A Full Stack Developer.
+                      <ListIcon as={BsCodeSlash} color="iconBtn" />A Full Stack Developer.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
+                      <ListIcon as={BsCodeSlash} color="iconBtn" />
                       With a diverse skill set.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
+                      <ListIcon as={BsCodeSlash} color="iconBtn" />
                       Passion for solving problems.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
+                      <ListIcon as={BsCodeSlash} color="iconBtn" />
                       Collaborates well with teams.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="LGHex_LBHex" />
+                      <ListIcon as={BsCodeSlash} color="iconBtn" />
                       Deliver Quality products.
                     </ListItem>
                   </List>

@@ -1,7 +1,6 @@
-
 export const FooterTopBox = {
   transition: "500ms",
-  bgColor: "Black_White",
+  bgColor: "barBg",
   justifyContent: "center",
   alignItems: "center",
   w: "100%",
@@ -10,8 +9,8 @@ export const FooterTopBox = {
 
 export const FooterTextStyle = {
   transition: "500ms",
-  color: "White_Black",
-  mt:"2",
+  color: "textPrimary",
+  mt: "2",
   as: "b",
   fontSize: "lg",
 };
@@ -19,6 +18,6 @@ export const FooterTextStyle = {
 export const FooterHeartIcon = {
   transition: "500ms",
   mx: "1",
-  mt:"2",
-  color: "LeafGreen_HeartRed",
+  mt: "2",
+  color: "heartColor",
 };

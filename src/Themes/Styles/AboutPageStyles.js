@@ -4,19 +4,20 @@ export const aboutButtonsTop = {
   ml: "8",
   mr: "2",
   gap: "3",
-  color: "White_Black",
-  bgColor: "DarkBlue_White",
+  color: "whiteBlack",
+  bgColor: "darkBlueWhite",
   transition: "500ms",
-  _hover: { bgColor: "#0086FC", color: "DarkBlue_White" },
-  _active: { backgroundColor: "#35FC00", color: "White_Black" },
+  _hover: { bgColor: "#0086FC", color: "darkBlueWhite" },
 };
 export const AboutResumeButton = {
   ml: "8",
   my: "4",
-  bgColor: "LGHex_LBHex",
-  color: "Black_White",
+  bgColor: "buttonBg",
+  color: "buttonText",
   boxShadow: "2xl",
-  _hover: { bgColor: "White_Gray", color: "DarkBlue_White" },
+  _hover: { bgColor: "buttonBgHover", color: "buttonTextHover" },
+  border: "3px solid",
+  borderColor: "buttonBorder",
   p: "6",
   fontSize: "xl",
 };
@@ -31,12 +32,12 @@ export const AboutHeadFlex = {
 };
 export const AboutHeadings = {
   transition: "500ms",
-  color: "DarkBlue_WTrans2",
+  color: "textPrimary",
   my: "4",
 };
 export const AboutHeadings2 = {
   transition: "500ms",
-  color: "Blue_White",
+  color: "textSecondary",
   my: "4",
 };
 export const AboutAfterHeading = {
@@ -62,35 +63,35 @@ export const AboutSummaryText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  textAlign: "justify",
-  color: "DarkBlue_WTrans3",
+  textAlign: "left",
+  color: "textPrimary",
   mx: "8",
 };
 export const AboutContactCopy = {
   transition: "500ms",
   as: "b",
   fontSize: "sm",
-  color: "White_Black",
+  color: "iconBtnBg",
   mx: "8",
 };
 export const AboutIconText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
-  color: "DarkBlue_WTrans3",
+  color: "iconBtn",
 };
 
 export const AboutStatStyle = {
   grid: {
     templateColumns: ["repeat(2,140px)", "repeat(2,140px)", "repeat(2,200px)", "repeat(4,200px)"],
-    color: "DarkBlue_WTrans3",
+    color: "textPrimary",
     width: "100%",
     gridGap: ["2", "2", "12"],
     placeContent: "center",
   },
   card: {
     direction: "column",
-    bgColor: "White_Gray",
+    bgColor: "cardBg",
     borderRadius: "25px",
     boxShadow: "lg",
     p: ["4", "4", "8"],

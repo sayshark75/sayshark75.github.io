@@ -38,12 +38,12 @@ const CarouselComp = () => {
   return (
     <Box w={"90%"} margin={"auto"}>
       <Slider {...settings}>
-        {certificates?.map((cert) => {
+        {certificates?.map((cert, id) => {
           return (
-            <Flex>
-              <Flex bgColor={"White_Gray"} boxShadow={"sm"} borderRadius={"25px"} p={4} mx={4} direction={"column"}>
+            <Flex key={id + Date.now()}>
+              <Flex bgColor={"cardBg"} boxShadow={"sm"} borderRadius={"25px"} p={4} mx={4} direction={"column"}>
                 <Image m={"auto"} w={"300px"} maxHeight={"200px"} src={cert.image} alt={cert.tag} />
-                <Text color={"Black_White"} as={"b"} textAlign={"center"}>
+                <Text color={"textNormal"} as={"b"} textAlign={"center"}>
                   {cert.tag}
                 </Text>
               </Flex>

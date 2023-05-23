@@ -22,13 +22,13 @@ import {
 export const ProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
-  bgColor: "White_WTrans0",
+  bgColor: "cardBg",
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
   borderRadius: "30px",
   boxShadow: "xl",
   border: "6px double",
-  borderColor: "Blue_White",
+  borderColor: "cardBorder",
   p: "5",
   justifyContent: "center",
   alignItems: "center",
@@ -60,21 +60,21 @@ export const ProjectDetailsFlexHeading = {
 };
 export const ProjectDetailsHeading1 = {
   transition: "500ms",
-  color: "EDBlue_White",
+  color: "textPrimary",
   fontSize: "lg",
   my: "2",
 };
 export const ProjectDetailsHeading2 = {
   transition: "500ms",
   fontSize: "lg",
-  color: "BluePlus_WTrans2",
+  color: "textSecondary",
   my: "2",
 };
 export const ProjectDetailsTextSummary = {
   transition: "500ms",
   as: "b",
   textAlign: "justify",
-  color: "EDBlue_White",
+  color: "textPrimary",
 };
 export const ProjectDetailsTextStackFlex = {
   transition: "500ms",
@@ -84,17 +84,18 @@ export const ProjectDetailsTextStackFlex = {
 };
 export const ProjectDetailsToolTip = {
   transition: "500ms",
-  bgColor: "DarkBlue_White",
-  color: "White_Black",
+  bgColor: "iconBtnBg",
+  color: "iconBtn",
 };
 export const ProjectDetailsIconButtonTop = {
   transition: "500ms",
   fontSize: "16px",
   width: "7rem",
-  _hover: { bgColor: "White_Black", color: "Black_White" },
-  bgColor: "LGHex_LBHex",
+  color: "buttonText",
+  _hover: { bgColor: "buttonBgHover", color: "buttonTextHover" },
+  bgColor: "buttonBg",
   border: "2px solid",
-  borderColor: "LGHex_LBHex",
+  borderColor: "buttonBorder",
 };
 export const ProjectDetailsIconButton = {
   transition: "500ms",
@@ -147,16 +148,16 @@ export const MainProjectHeadlineFlex = {
 };
 export const MainProjectHeading1 = {
   transition: "500ms",
-  color: "DarkBlue_WTrans2",
+  color: "textPrimary",
   my: "4",
 };
 export const MainProjectHeading2 = {
   transition: "500ms",
-  color: "Blue_White",
+  color: "textSecondary",
   my: "4",
 };
 export const CalColorText = {
-  color: "DarkBlue_White",
+  color: "textPrimary",
   p: "6",
   borderRadius: "8",
   _hover: { boxShadow: "xl" },

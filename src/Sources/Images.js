@@ -2,7 +2,7 @@ export const typeImageBase = "https://user-images.githubusercontent.com/11230465
 
 export const typeImageBaseLite = "https://user-images.githubusercontent.com/112304655/211468424-293ad713-6752-4f2d-a590-41b61e815e3e.svg";
 
-export const ProfilePicBW = "https://github.com/sayshark75/sayshark75/assets/112304655/e260bf00-2ca2-4c39-8ae6-2d7dfa7a7ed3";
+export const ProfilePicBW = "https://github.com/sayshark75/sayshark75/assets/112304655/b003d32c-9501-4f6b-ad99-4a8877d40824";
 
 export const ProfilePicBlue = "https://user-images.githubusercontent.com/112304655/211153250-b7bba95a-dde6-45e5-95ab-0be349004bfd.png";
 

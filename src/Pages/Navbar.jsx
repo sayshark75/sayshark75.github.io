@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { MdInfo, MdDevices, MdContactPage, MdContacts, MdDarkMode, MdWbSunny } from "react-icons/md";
 
 import {
-  NavabrButtonStyleLaptop,
+  NavbarButtonStyleLaptop,
   NavbarLaptopBar,
   NavbarMobileBar,
   NavbarButtonInsideBoxMobile,
@@ -38,32 +38,32 @@ const Navbar = () => {
         <Flex {...NavbarLaptopBar}>
           <Show above="lg">
             <Flex alignItems={"center"} flex={1}>
-              <Text {...NavbarLaptopLogoStyle}>Sayyed Sharuk</Text>
+              <Text {...NavbarLaptopLogoStyle}>&sect;</Text>
             </Flex>
           </Show>
           <Flex justifyContent={"flex-end"} flex={1}>
-            <Button onClick={handleHomeRef} {...NavabrButtonStyleLaptop}>
+            <Button onClick={handleHomeRef} {...NavbarButtonStyleLaptop}>
               <FaHome /> Home
             </Button>
 
-            <Button onClick={handleAboutRef} {...NavabrButtonStyleLaptop}>
+            <Button onClick={handleAboutRef} {...NavbarButtonStyleLaptop}>
               <MdInfo /> About
             </Button>
 
-            <Button onClick={handleProjectsRef} {...NavabrButtonStyleLaptop}>
+            <Button onClick={handleProjectsRef} {...NavbarButtonStyleLaptop}>
               <MdDevices /> Projects
             </Button>
 
-            <Button onClick={handleSkillsRef} {...NavabrButtonStyleLaptop}>
+            <Button onClick={handleSkillsRef} {...NavbarButtonStyleLaptop}>
               <BsStars /> Skills
             </Button>
 
-            <Button onClick={handleContactRef} {...NavabrButtonStyleLaptop}>
+            <Button onClick={handleContactRef} {...NavbarButtonStyleLaptop}>
               <MdContacts /> Contact
             </Button>
 
             <a href={resumeDownload} onClick={handleClick}>
-              <Button {...NavabrButtonStyleLaptop}>
+              <Button {...NavbarButtonStyleLaptop}>
                 <MdContactPage /> Resume
               </Button>
             </a>

@@ -1,7 +1,6 @@
-
 export const toolTipStyle = {
-  bg: "White_White",
-  color: "DarkBlue_Black",
+  bg: "buttonText",
+  color: "blackColor",
   mt: "4",
   transition: "500ms",
 };
