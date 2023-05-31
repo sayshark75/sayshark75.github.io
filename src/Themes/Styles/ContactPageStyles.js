@@ -13,12 +13,14 @@ export const ContactFlexMain = {
   direction: "column",
   justifyContent: "center",
   alignItems: "center",
-  mt: "12",
+  minH: "100vh",
+  gap: "10",
+  pt: "12",
 };
 export const ContactButtons = {
   borderRadius: "50%",
   size: "md",
-  m: { base: "1px", sm: "2", md: "3", lg: "5", xl: "6" },
+  mx: { base: "1px", sm: "2", md: "3", lg: "5", xl: "6" },
   color: "buttonText",
   bgColor: "buttonBg",
   transition: "700ms",
@@ -45,4 +47,31 @@ export const ContactCopy = {
   fontSize: "sm",
   color: "textNormal",
   _hover: { color: "iconBtnHover" },
+};
+
+export const MsgFormStyle = {
+  main: {
+    w: ["310px", "440px"],
+    p: 4,
+    m: "2",
+    bgColor: "msgFormBg",
+    color: "msgFormInputText",
+    rounded: "xl",
+    direction: "column",
+    gap: 4,
+  },
+  input: {
+    bgColor: "msgFormInput",
+    outline: "none",
+    border: "none",
+    _placeholder: { color: "msgFormInputText" },
+  },
+  btn: {
+    gap: "1",
+    bgColor: "msgBtnBg",
+    rounded: "full",
+    outline: "none",
+    border: "none",
+    _hover: { bgColor: "msgBtnText", color: "msgBtnBg" },
+  },
 };

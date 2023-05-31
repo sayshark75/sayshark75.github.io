@@ -42,7 +42,7 @@ const Home = () => {
           <IconButton {...themeStyle.btn} onClick={() => handleThemeChange(PurpleTheme)} icon={<MdColorLens />} bgColor={"purple.500"} />
           <IconButton {...themeStyle.btn} onClick={() => handleThemeChange(RedTheme)} icon={<MdColorLens />} bgColor={"red.500"} />
         </Flex>
-        <Flex my={"2"} gap={"3"}>
+        <Flex my={"8"} mx={"2"} gap={"3"}>
           <FadeIn {...fadeInConfigBottom} delayInMilliseconds={400}>
             <Tooltip {...toolTipStyle} label={"Github"}>
               <a href={githubLink} target={"_blank"} rel="noreferrer">

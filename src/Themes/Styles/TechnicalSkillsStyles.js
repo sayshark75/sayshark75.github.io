@@ -12,13 +12,15 @@ export const TechSkillsHeading2 = {
 export const TechSkillsFlexTopMain = {
   transition: "500ms",
   direction: "column",
+  minH: "100vh",
   justifyContent: "center",
   alignItems: "center",
+  mx: "3",
 };
 export const TechSkillsMainCard = {
   borderRadius: "8",
   mt: "4",
-  px: "8",
+  px: ["2", "4", "8"],
   py: "2",
   boxShadow: "2xl",
   bgColor: "buttonText",
@@ -28,7 +30,7 @@ export const TechSkillsMainCard = {
 export const TechSkillsInGridFlex = {
   transition: "500ms",
   borderRadius: "10",
-  padding: "4",
+  p: ["4", "8"],
   backgroundColor: "techBox",
   _hover: { boxShadow: "dark-lg" },
   direction: "column",

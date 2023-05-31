@@ -9,7 +9,7 @@ export const OrangeTheme = extendTheme({
       },
       textPrimary: {
         default: "#804F29",
-        _dark: "#AAAAAA",
+        _dark: "#CE6C31",
       },
       blackColor: {
         default: "#000000",
@@ -90,6 +90,26 @@ export const OrangeTheme = extendTheme({
       heartColor: {
         default: "#FF7C16",
         _dark: "#FF7C16",
+      },
+      msgFormBg: {
+        default: "#FF7C16",
+        _dark: "#CE6C31",
+      },
+      msgFormInput: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgFormInputText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
+      },
+      msgBtnBg: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgBtnText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
       },
     },
   },

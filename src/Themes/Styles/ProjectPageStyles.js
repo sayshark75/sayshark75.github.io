@@ -22,6 +22,7 @@ import {
 export const ProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
+  mx: "4",
   bgColor: "cardBg",
   gap: "6",
   direction: { base: "column", sm: "column", md: "row" },
@@ -136,9 +137,9 @@ export const GCardD = {
 
 export const MainProjectHeadFlex = {
   transition: "500ms",
-  py: "8",
-  mx: "12",
   justifyContent: "center",
+  pt: "10",
+  minH: "100vh",
   alignItems: "center",
   direction: "column",
 };

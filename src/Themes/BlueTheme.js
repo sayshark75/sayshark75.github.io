@@ -9,7 +9,7 @@ export const BlueTheme = extendTheme({
       },
       textPrimary: {
         default: "#294D80",
-        _dark: "#AAAAAA",
+        _dark: "#3182CE",
       },
       blackColor: {
         default: "#000000",
@@ -79,6 +79,10 @@ export const BlueTheme = extendTheme({
         default: "#167CFF",
         _dark: "#FFFFFF",
       },
+      heartColor: {
+        default: "#167CFF",
+        _dark: "#167CFF",
+      },
       techBox: {
         default: "#232323",
         _dark: "#000000",
@@ -87,9 +91,25 @@ export const BlueTheme = extendTheme({
         default: "#0D59BB",
         _dark: "#082E5F",
       },
-      heartColor: {
-        default: "#167CFF",
-        _dark: "#167CFF",
+      msgFormBg: {
+        default: "#0D59BB",
+        _dark: "#3182CE",
+      },
+      msgFormInput: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgFormInputText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
+      },
+      msgBtnBg: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgBtnText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
       },
     },
   },

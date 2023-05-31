@@ -1,16 +1,16 @@
 export const homeParentFlex = {
-  mt: { base: "30px", md: "80px" },
   transition: "500ms",
   direction: "column",
+  justifyContent: "center",
   alignItems: "center",
   w: "100%",
-  pt: "50px",
-  justifyContent: "center",
+  h: "100vh",
+  gap: "12",
 };
 export const homeButtonsTop = {
   borderRadius: "3",
   size: "sm",
-  m: { base: "1px", sm: "2", md: "3", lg: "5", xl: "6" },
+  mx: { base: "1px", sm: "2", md: "3", lg: "5", xl: "6" },
   color: "iconBtn",
   bgColor: "iconBtnBg",
   transition: "700ms",
@@ -29,23 +29,20 @@ export const heading2 = {
   color: "textSecondary",
 };
 export const aboutFlex = {
-  m: "auto",
-  my: "2",
   transition: "1000",
   w: { base: "95%", sm: "90%", md: "85%", lg: "70%" },
 };
 export const aboutText = {
   as: "b",
-  p: "8",
   transition: "500ms",
   color: "textPrimary",
   textAlign: "justify",
+  m: ["4", "8"],
 };
 
 export const themeStyle = {
   main: {
     gap: 2,
-    marginBottom: 10,
   },
   btn: {
     fontSize: "2xl",

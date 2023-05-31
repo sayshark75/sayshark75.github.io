@@ -2,8 +2,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
-import { certificates } from "../Sources/Certificates";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { certificates } from "../Sources/Certificates";
 
 const CarouselComp = () => {
   var settings = {
@@ -36,7 +36,7 @@ const CarouselComp = () => {
     ],
   };
   return (
-    <Box w={"90%"} margin={"auto"}>
+    <Box w={"90%"} direction={"row"}>
       <Slider {...settings}>
         {certificates?.map((cert, id) => {
           return (

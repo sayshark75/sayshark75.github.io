@@ -9,7 +9,7 @@ export const RedTheme = extendTheme({
       },
       textPrimary: {
         default: "#802929",
-        _dark: "#AAAAAA",
+        _dark: "#CE3131",
       },
       blackColor: {
         default: "#000000",
@@ -90,6 +90,26 @@ export const RedTheme = extendTheme({
       heartColor: {
         default: "#FF1616",
         _dark: "#FF1616",
+      },
+      msgFormBg: {
+        default: "#FF1616",
+        _dark: "#CE3131",
+      },
+      msgFormInput: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgFormInputText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
+      },
+      msgBtnBg: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgBtnText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
       },
     },
   },

@@ -9,7 +9,7 @@ export const GreenTheme = extendTheme({
       },
       textPrimary: {
         default: "#29802E",
-        _dark: "#AAAAAA",
+        _dark: "#38CE31",
       },
       blackColor: {
         default: "#000000",
@@ -90,6 +90,26 @@ export const GreenTheme = extendTheme({
       heartColor: {
         default: "#1DFF16",
         _dark: "#1DFF16",
+      },
+      msgFormBg: {
+        default: "#1DFF16",
+        _dark: "#31CE31",
+      },
+      msgFormInput: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgFormInputText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
+      },
+      msgBtnBg: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgBtnText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
       },
     },
   },

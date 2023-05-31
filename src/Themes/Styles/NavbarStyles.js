@@ -12,9 +12,10 @@ export const NavbarButtonStyleLaptop = {
 
 export const NavbarLaptopBar = {
   transition: "500ms",
-  pos: "sticky",
+  pos: "fixed",
   zIndex: "1",
   top: "0px",
+  left: "0px",
   w: "100%",
   bgColor: "iconBtn",
   color: "iconBtnBg",

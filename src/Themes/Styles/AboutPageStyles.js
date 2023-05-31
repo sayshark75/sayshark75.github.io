@@ -26,10 +26,12 @@ export const AboutHeadFlex = {
   transition: "500ms",
   direction: "column",
   w: "100%",
-  pt: "12",
+  minH: "100vh",
+  h: "100%",
   justifyContent: "center",
   alignItems: "center",
 };
+
 export const AboutHeadings = {
   transition: "500ms",
   color: "textPrimary",
@@ -45,12 +47,14 @@ export const AboutAfterHeading = {
   m: "4",
   w: { base: "100%", sm: "90%", md: "80%", lg: "80%" },
   justifyContent: "center",
+  alignItems: "center",
 };
 export const AboutAfterHeadingMain = {
   transition: "500ms",
   direction: { base: "column", sm: "column", md: "column", lg: "row" },
   justifyContent: "center",
   m: "1",
+
   alignItems: { base: "center", md: "flex-start" },
   gap: 1,
 };
@@ -59,13 +63,17 @@ export const AboutProfilePicture = {
   borderRadius: "50%",
   w: { base: "250px", sm: "300px", md: "500px" },
 };
+export const AboutPicSideData = {
+  alignSelf: "center",
+  direction: "column",
+};
 export const AboutSummaryText = {
   transition: "500ms",
   as: "b",
   fontSize: "md",
   textAlign: "left",
   color: "textPrimary",
-  mx: "8",
+  mx: ["2", "8"],
 };
 export const AboutContactCopy = {
   transition: "500ms",
@@ -86,7 +94,7 @@ export const AboutStatStyle = {
     templateColumns: ["repeat(2,140px)", "repeat(2,140px)", "repeat(2,200px)", "repeat(4,200px)"],
     color: "textPrimary",
     width: "100%",
-    gridGap: ["2", "2", "12"],
+    gridGap: ["2", "8", "12"],
     placeContent: "center",
   },
   card: {

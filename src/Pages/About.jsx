@@ -13,6 +13,7 @@ import {
   AboutHeadFlex,
   AboutHeadings,
   AboutHeadings2,
+  AboutPicSideData,
   AboutProfilePicture,
   AboutResumeButton,
   AboutStatStyle,
@@ -47,27 +48,27 @@ const About = () => {
                 <Image {...AboutProfilePicture} src={ProfilePicBlue} />
               </Flex>
             </Flex>
-            <Flex flex={5} direction={"column"}>
+            <Flex flex={5} {...AboutPicSideData}>
               <Text {...AboutSummaryText}>
                 {summary ? (
                   <List spacing={3} my={"5"}>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="iconBtn" />A Full Stack Developer.
+                      <ListIcon as={BsCodeSlash} color="textPrimary" />A Full Stack Developer.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="iconBtn" />
+                      <ListIcon as={BsCodeSlash} color="textPrimary" />
                       With a diverse skill set.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="iconBtn" />
+                      <ListIcon as={BsCodeSlash} color="textPrimary" />
                       Passion for solving problems.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="iconBtn" />
+                      <ListIcon as={BsCodeSlash} color="textPrimary" />
                       Collaborates well with teams.
                     </ListItem>
                     <ListItem>
-                      <ListIcon as={BsCodeSlash} color="iconBtn" />
+                      <ListIcon as={BsCodeSlash} color="textPrimary" />
                       Deliver Quality products.
                     </ListItem>
                   </List>
@@ -81,38 +82,37 @@ const About = () => {
             </Flex>
           </Flex>
         </Flex>
+        <Grid {...AboutStatStyle.grid}>
+          <Flex {...AboutStatStyle.card}>
+            <Text {...AboutStatStyle.icon}>
+              <BsCodeSlash />
+            </Text>
+            <Heading>1400+</Heading>
+            <Text {...AboutStatStyle.text}>Hours of Coding</Text>
+          </Flex>
+          <Flex {...AboutStatStyle.card}>
+            <Text {...AboutStatStyle.icon}>
+              <MdOutlineWbSunny />
+            </Text>
+            <Heading>800+</Heading>
+            <Text {...AboutStatStyle.text}>DSA Problems</Text>
+          </Flex>
+          <Flex {...AboutStatStyle.card}>
+            <Text {...AboutStatStyle.icon}>
+              <RiPagesFill />
+            </Text>
+            <Heading>6+</Heading>
+            <Text {...AboutStatStyle.text}>Ongoing Projects</Text>
+          </Flex>
+          <Flex {...AboutStatStyle.card}>
+            <Text {...AboutStatStyle.icon}>
+              <SiGithub />
+            </Text>
+            <Heading>750+</Heading>
+            <Text {...AboutStatStyle.text}>Github Contributions</Text>
+          </Flex>
+        </Grid>
       </Flex>
-
-      <Grid {...AboutStatStyle.grid}>
-        <Flex {...AboutStatStyle.card}>
-          <Text {...AboutStatStyle.icon}>
-            <BsCodeSlash />
-          </Text>
-          <Heading>1400+</Heading>
-          <Text {...AboutStatStyle.text}>Hours of Coding</Text>
-        </Flex>
-        <Flex {...AboutStatStyle.card}>
-          <Text {...AboutStatStyle.icon}>
-            <MdOutlineWbSunny />
-          </Text>
-          <Heading>800+</Heading>
-          <Text {...AboutStatStyle.text}>DSA Problems</Text>
-        </Flex>
-        <Flex {...AboutStatStyle.card}>
-          <Text {...AboutStatStyle.icon}>
-            <RiPagesFill />
-          </Text>
-          <Heading>6+</Heading>
-          <Text {...AboutStatStyle.text}>Ongoing Projects</Text>
-        </Flex>
-        <Flex {...AboutStatStyle.card}>
-          <Text {...AboutStatStyle.icon}>
-            <SiGithub />
-          </Text>
-          <Heading>750+</Heading>
-          <Text {...AboutStatStyle.text}>Github Contributions</Text>
-        </Flex>
-      </Grid>
     </>
   );
 };

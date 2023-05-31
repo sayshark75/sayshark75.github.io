@@ -9,7 +9,7 @@ export const PurpleTheme = extendTheme({
       },
       textPrimary: {
         default: "#39085F",
-        _dark: "#AAAAAA",
+        _dark: "#8231CE",
       },
       blackColor: {
         default: "#000000",
@@ -90,6 +90,26 @@ export const PurpleTheme = extendTheme({
       heartColor: {
         default: "#8B16FF",
         _dark: "#8B16FF",
+      },
+      msgFormBg: {
+        default: "#8B16FF",
+        _dark: "#8231CE",
+      },
+      msgFormInput: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgFormInputText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
+      },
+      msgBtnBg: {
+        default: "#FFFFFF",
+        _dark: "#0F0F0F",
+      },
+      msgBtnText: {
+        default: "#0F0F0F",
+        _dark: "#FFFFFF",
       },
     },
   },
