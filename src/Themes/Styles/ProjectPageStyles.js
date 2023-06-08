@@ -1,24 +1,3 @@
-import {
-  GCLLevel1,
-  GCLLevel2,
-  GCLLevel3,
-  GCLLevel4,
-  GCLBase,
-  GCDLevel1,
-  GCDLevel2,
-  GCDLevel3,
-  GCDLevel4,
-  GCDBase,
-  GCLBg,
-  GCLTitle,
-  GCLText,
-  GCLRing,
-  GCDBg,
-  GCDTitle,
-  GCDText,
-  GCDRing,
-} from "../ColorPallet";
-
 export const ProjectHeadFlex = {
   transition: "500ms",
   mb: "8",
@@ -33,6 +12,7 @@ export const ProjectHeadFlex = {
   p: "5",
   justifyContent: "center",
   alignItems: "center",
+  _hover: { boxShadow: "xl", border: "6px double", borderColor: "heartColor" },
 };
 export const ProjectImgStyle = {
   transition: "500ms",
@@ -105,36 +85,6 @@ export const ProjectDetailsIconButton = {
   _hover: { bgColor: "transparent" },
 };
 
-export const GCLTheme = {
-  level4: GCLLevel1,
-  level3: GCLLevel2,
-  level2: GCLLevel3,
-  level1: GCLLevel4,
-  level0: GCLBase,
-};
-export const GCDTheme = {
-  level4: GCDLevel1,
-  level3: GCDLevel2,
-  level2: GCDLevel3,
-  level1: GCDLevel4,
-  level0: GCDBase,
-};
-
-export const GCardL = {
-  bgColor: GCLBg,
-  titleColor: GCLTitle,
-  textColor: GCLText,
-  ringColor: GCLRing,
-  customTitle: "My Statistics",
-};
-export const GCardD = {
-  bgColor: GCDBg,
-  titleColor: GCDTitle,
-  textColor: GCDText,
-  ringColor: GCDRing,
-  customTitle: "My Statistics",
-};
-
 export const MainProjectHeadFlex = {
   transition: "500ms",
   justifyContent: "center",
@@ -161,11 +111,29 @@ export const CalColorText = {
   color: "textPrimary",
   p: "6",
   borderRadius: "8",
-  _hover: { boxShadow: "xl" },
+  _hover: { boxShadow: "xl", borderTop: "5px solid", borderTopColor: "heartColor" },
   transition: "700ms",
+  bgColor: "cardBg",
 };
 export const CalStyleProps = {
   fontSize: 16,
   blockSize: 15,
   blockMargin: 5,
+};
+
+export const GCTheme = {
+  dark: {
+    level4: "#FFFFFF",
+    level3: "#CCCCCC",
+    level2: "#999999",
+    level1: "#444444",
+    level0: "#111111",
+  },
+  light: {
+    level4: "#111111",
+    level3: "#444444",
+    level2: "#999999",
+    level1: "#CCCCCC",
+    level0: "#FFFFFF",
+  },
 };

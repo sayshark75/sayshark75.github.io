@@ -32,7 +32,7 @@ export const TechSkillsInGridFlex = {
   borderRadius: "10",
   p: ["4", "8"],
   backgroundColor: "techBox",
-  _hover: { boxShadow: "dark-lg" },
+  _hover: { boxShadow: "dark-lg", borderTop: "5px solid", borderTopColor: "buttonBorder" },
   direction: "column",
   justifyContent: "center",
   alignItems: "center",

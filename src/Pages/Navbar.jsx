@@ -16,7 +16,7 @@ import {
 } from "../Themes/Styles/NavbarStyles";
 import { resumeDownload, resumelink } from "../Sources/Links.js";
 import { ScrollContext } from "../Contexts/ScrollContext";
-import changeThemeMeta from "../SideEffects/MobileChromeTheme";
+import changeThemeMeta from "../Utils/MobileChromeTheme";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();

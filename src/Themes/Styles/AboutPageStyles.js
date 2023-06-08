@@ -36,11 +36,13 @@ export const AboutHeadings = {
   transition: "500ms",
   color: "textPrimary",
   my: "4",
+  mt: "12",
 };
 export const AboutHeadings2 = {
   transition: "500ms",
   color: "textSecondary",
   my: "4",
+  mt: "12",
 };
 export const AboutAfterHeading = {
   transition: "500ms",
@@ -107,6 +109,8 @@ export const AboutStatStyle = {
     alignItems: "center",
     gap: "3",
     textAlign: "center",
+    transition: "500ms",
+    _hover: { boxShadow: "xl", borderTop: "5px solid", borderTopColor: "heartColor" },
   },
   icon: {
     as: "b",

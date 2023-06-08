@@ -41,7 +41,16 @@ const CarouselComp = () => {
         {certificates?.map((cert, id) => {
           return (
             <Flex key={id + Date.now()}>
-              <Flex bgColor={"cardBg"} boxShadow={"sm"} borderRadius={"25px"} p={4} mx={4} direction={"column"}>
+              <Flex
+                bgColor={"cardBg"}
+                boxShadow={"sm"}
+                borderRadius={"25px"}
+                p={4}
+                mx={4}
+                direction={"column"}
+                transition={"500ms"}
+                _hover={{ boxShadow: "xl", borderTop: "5px solid", borderTopColor: "heartColor" }}
+              >
                 <Image m={"auto"} w={"300px"} maxHeight={"200px"} src={cert.image} alt={cert.tag} />
                 <Text color={"textNormal"} as={"b"} textAlign={"center"}>
                   {cert.tag}
