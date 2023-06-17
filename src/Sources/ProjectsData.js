@@ -1,7 +1,21 @@
-import { project1Dark, project1Light, project3Dark, project3Light, project4Dark, project4Light, project5Dark, project5Light, project6Dark, project6Light } from "./Images";
+import {
+  project1Dark,
+  project1Light,
+  project3Dark,
+  project3Light,
+  project4Dark,
+  project4Light,
+  project5Dark,
+  project5Light,
+  project6Dark,
+  project6Light,
+  project7Dark,
+  project7Light,
+} from "./Images";
 import {
   APrimeGithub,
   APrimeLive,
+  AutotronLive,
   GadgetRamboGithub,
   GadgetRamboLive,
   KoovsGithub,
@@ -16,6 +30,16 @@ import {
 
 export const ProjectsData = [
   {
+    live: AutotronLive,
+    github: "",
+    imgDark: project7Dark,
+    imgLight: project7Light,
+    heading1: "Autotron.Tech",
+    heading2: "(Electronics)",
+    summary: "Sells and Repairs Electonic Projects as per client Requirements, Also sells Labkits",
+    TStack: ["React", "NextJS 13.4", "MongoDB", "Next-Auth", "Server-Components", "Tailwind"],
+  },
+  {
     live: KoovsLive,
     github: KoovsGithub,
     imgDark: project6Dark,
@@ -23,7 +47,7 @@ export const ProjectsData = [
     heading1: "KOOVS Ecommerce",
     heading2: "(Koovs.com Clone)",
     summary: "koovs is a Ecommerce website which helps you to find the different kinds of Fashion Related Products.",
-    TStack: [true, true, true, false, true, false, true, false, true, true, true],
+    TStack: ["React", "JavaScript", "HTML", "CSS", "Node", "Express", "MongoDB"],
   },
   {
     live: APrimeLive,
@@ -33,7 +57,7 @@ export const ProjectsData = [
     heading1: "A-Prime",
     heading2: "(Custom Youtube App)",
     summary: "It is A Simple Video Platform to watch Youtube videos, Made using Google Youtube Data API V3. We can Search through various videos, filter, and paginate",
-    TStack: [true, true, true, false, false, true, true, false, false, false, false],
+    TStack: ["React", "JavaScript", "TypeScript", "YouTube API", "Redux", "Node", "Express", "MongoDB", "ChakraUI"],
   },
   {
     live: GadgetRamboLive,
@@ -44,7 +68,7 @@ export const ProjectsData = [
     heading2: "(Gadget360.com Clone)",
     summary:
       "This website had been created to target tech-geeks to explore tech gadgets and tech related news. Sells Tech Gadgets and Stores Knowledge of Specifications of those Gadgets",
-    TStack: [true, true, true, false, true, true, true, true, false, false, false],
+    TStack: ["React", "NextJS", "Firebase", "Google-Auth", "TypeScript", "Redux", "ChakraUI"],
   },
   {
     live: glamazonLive,
@@ -54,7 +78,7 @@ export const ProjectsData = [
     heading1: `Glamazon.com`,
     heading2: "(BeautyBebo.com Clone)",
     summary: "A Ecommerce Website that sells Products Related to Cosmetics and Beauty. Build on ReactJs for Frontend and Custom Server (Json-server) on Backend.",
-    TStack: [true, true, true, false, false, false, false, false, false, false, false],
+    TStack: ["React", "ChakraUI", "JavaScript", "HTML", "CSS"],
   },
   // {
   //   live: myTheresaLive,
@@ -72,10 +96,10 @@ export const ProjectsData = [
     github: indianExpressGithub,
     imgDark: project3Dark,
     imgLight: project3Light,
-    heading1: "IndianExpress.com",
-    heading2: "",
+    heading1: "IndianExpress",
+    heading2: "(News)",
     summary:
       "It is an Online and Offline News Platform, The Indian Express grew into a multiple-edition paper influencing thought and policy across the country. Packed with a fair mix of news, knowledge and information.",
-    TStack: [false, false, true, true, true, false, false, false, false, false, false],
+    TStack: ["JavaScript", "HTML", "CSS"],
   },
 ];

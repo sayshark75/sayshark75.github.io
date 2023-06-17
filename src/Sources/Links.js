@@ -44,3 +44,5 @@ export const GadgetRamboLive = "https://gadget-rambo.netlify.app/";
 export const KoovsGithub = "https://github.com/sukanta255/ordinary-summer-5089";
 
 export const KoovsLive = "https://frontend-mohit-6164.vercel.app/";
+
+export const AutotronLive = "https://www.autotron.tech/";

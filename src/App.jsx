@@ -8,6 +8,7 @@ import TechnicalSkills from "./Pages/TechnicalSkills";
 import Contact from "./Pages/Contact";
 import Footer from "./Pages/Footer";
 import Certificates from "./Pages/Certificates";
+import Experience from "./Pages/Experience";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <About />
       <Certificates />
+      <Experience />
       <Projects />
       <TechnicalSkills />
       <Contact />

@@ -29,3 +29,7 @@ export const project5Light = "https://user-images.githubusercontent.com/11230465
 export const project6Dark = "https://user-images.githubusercontent.com/112304655/230431306-20513721-98f9-45e5-8773-8b54c0a96ecf.png";
 
 export const project6Light = "https://user-images.githubusercontent.com/112304655/230431622-ca199252-f94d-4818-b510-a67d549f5a3a.png";
+
+export const project7Dark = "https://github.com/sayshark75/sayshark75/assets/112304655/6c02788a-6717-41a0-821d-c9c3be01efeb";
+
+export const project7Light = "https://github.com/sayshark75/sayshark75/assets/112304655/9a7979e4-421d-41af-8212-f00c0e9b2020";
